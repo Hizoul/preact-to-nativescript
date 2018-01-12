@@ -2,7 +2,7 @@
   "name": "preact-to-nativescript",
   "version": "0.0.1",
   "description": "Render Preact-Components to NativeScript",
-  "main": "dist/preact-to-nativescript.js",
+  "main": "dist/preact-to-nativescript.m.js",
   "repository": "https://github.com/hizoul/preact-to-nativescript",
   "author": "hizoul",
   "license": "MIT",
@@ -10,8 +10,8 @@
     "microbundle": "^0.2.4"
   },
   "scripts": {
-    "build": "./node_modules/.bin/microbundle",
-    "dev": "./node_modules/.bin/microbundle watch"
+    "build": "./node_modules/.bin/microbundle index.js",
+    "dev": "./node_modules/.bin/microbundle watch index.js"
   },
   "dependencies": {
     "preact": "^8.2.7"

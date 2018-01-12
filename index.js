@@ -1,5 +1,4 @@
 let TextElement
-let Preact
 function findWhere(arr, fn, returnIndex, byValueOnly) {
 	let i = arr.length;
 	while (i--) if (typeof fn==='function' && !byValueOnly ? fn(arr[i]) : arr[i]===fn) break;
@@ -276,8 +275,7 @@ const document = {
 }
 
 global.document = document
-import * as PreactLib from "./preact"
-Preact = PreactLib
+import * as Preact from "./preact"
 var h = Preact.h
 let types = {};
 // preact-render-to-nativescript
@@ -329,6 +327,7 @@ const render = (Component, parent, merge) => {
   return parent.childNodes[0]
 }
 
+export default render
 export {
   Preact, render
 }
