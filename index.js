@@ -1,14 +1,9 @@
-let TextElement
 function findWhere(arr, fn, returnIndex, byValueOnly) {
 	let i = arr.length;
 	while (i--) if (typeof fn==='function' && !byValueOnly ? fn(arr[i]) : arr[i]===fn) break;
 	return returnIndex ? i : arr[i];
 }
 
-let currentPage
-
-const makeSame = (orig, makeToThis) => {
-}
 
 // stuff to mix into NS's view prototypes
 // mostly copied from Node in undom (https://github.com/developit/undom/blob/master/src/undom.js)
