@@ -9,6 +9,8 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.0.6",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
@@ -16,7 +18,8 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^22.0.6",
-    "microbundle": "^0.2.4"
+    "microbundle": "^0.2.4",
+    "preact-nativescript-mock": "0.0.2"
   },
   "scripts": {
     "prepublish": "npm run build",
@@ -25,10 +28,7 @@
     "test": "./node_modules/.bin/jest --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
-    "coveralls": "^3.0.0",
-    "preact": "^8.2.7",
-    "preact-nativescript-mock": "0.0.2"
+    "preact": "^8.2.7"
   },
   "jest": {
     "transform": {

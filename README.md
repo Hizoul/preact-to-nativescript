@@ -1,5 +1,6 @@
 # preact-to-nativescript[![Build Status](https://travis-ci.org/Hizoul/preact-to-nativescript.svg?branch=master)](https://travis-ci.org/Hizoul/preact-to-nativescript) [![Coverage Status](https://coveralls.io/repos/github/Hizoul/preact-to-nativescript/badge.svg?branch=master)](https://coveralls.io/github/Hizoul/preact-to-nativescript?branch=master) [![dependencies](https://david-dm.org/Hizoul/preact-to-nativescript.png)](https://david-dm.org/Hizoul/preact-to-nativescript) [![npm](https://img.shields.io/npm/v/preact-to-nativescript.svg)](https://www.npmjs.com/package/preact-to-nativescript)
 ## This Library is experimental!
+## [Documentation](https://raw.githubusercontent.com/Hizoul/preact-to-nativescript/docs/_book/index.html)
 
 # Usage
 The following is assumed to be executed at the project root of a NativeScript Project
