@@ -5,6 +5,7 @@ function findWhere(arr, fn, returnIndex, byValueOnly) {
   while (i--) if (typeof fn === "function" && !byValueOnly ? fn(arr[i]) : arr[i] === fn) break
   return returnIndex ? i : arr[i]
 }
+
 let extensions = {
   setAttribute(name, value) {
     this.set(name, value)
@@ -156,6 +157,11 @@ const convertType = (type) => {
   return newType
 }
 
+const nodeValueGetSet = {
+  set(v) { this.text = v },
+  get() { return this.text }
+}
+
 const document = {
   createElement(type) {
     if (type === "undefined") {
@@ -217,10 +223,7 @@ const document = {
   createTextNode(text) {
     let el = document.createElement("label")
     el.text = text
-    Object.defineProperty(el, "nodeValue", {
-      set(v) { this.text = v },
-      get() { return this.text }
-    })
+    Object.defineProperty(el, "nodeValue", nodeValueGetSet)
     el.splitText = () => null
     return el
   }
@@ -271,5 +274,5 @@ const render = (Component, parent, merge) => {
 
 export default render
 export {
-  Preact, render
+  Preact, render, nodeValueGetSet
 }

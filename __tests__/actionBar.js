@@ -10,7 +10,7 @@ test("Action Bar", () => {
         h("stackLayout", null, [
           h("label", {text: "myText"})
         ]),
-        h("navigationButton", {text: "MyNav"}, [h("label", {text: "myla"})]),
+        h("navigationButton", {text: "MyNav"}, [h("label", {}, ["rawtext", "as", "children"])]),
         h("actionItem", {text: "myAction"}),
         h("actionItem", {text: "otherAction"}, [h("label", {text: "ot"})])
       ]),
