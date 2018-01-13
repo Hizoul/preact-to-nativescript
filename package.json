@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
     "preact": "^8.2.7",
     "preact-nativescript-mock": "0.0.1"
   },
