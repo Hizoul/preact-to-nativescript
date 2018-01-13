@@ -246,7 +246,7 @@ const render = (Component, parent, merge) => {
           newChild.addCssFile(newChild.cssFile)
         }
         parent.childNodes.push(newChild)
-        // newChild.parentNode = parent
+        newChild.parentNode = parent
         newChild.renderedComponent = parent.renderedComponent
         newChild.mergeInto = parent.mergeInto
       },

@@ -150,6 +150,48 @@ Page {
   "mergeInto": undefined,
   "nodeName": "PAGE",
   "nodeType": 1,
+  "parentNode": Object {
+    "appendChild": [Function],
+    "attributes": Array [],
+    "childNodes": Array [
+      [Circular],
+    ],
+    "mergeInto": undefined,
+    "nodeName": "artificalParent",
+    "nodeType": "artificalParent",
+    "remove": [Function],
+    "removeChild": [Function],
+    "renderedComponent": VNode {
+      "attributes": undefined,
+      "children": Array [
+        VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": Object {
+                    "text": "myText",
+                  },
+                  "children": Array [],
+                  "key": undefined,
+                  "nodeName": "label",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "stackLayout",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "scrollView",
+        },
+      ],
+      "key": undefined,
+      "nodeName": "page",
+    },
+    "renderedInto": null,
+  },
   "renderedComponent": VNode {
     "attributes": undefined,
     "children": Array [
