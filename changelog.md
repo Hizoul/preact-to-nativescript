@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.3
+- Fix typescript render declaration by making second and third argument optional
+
 ## 0.0.2
 - Full Test Coverage and changes to the code that resulted from achieving it
 
