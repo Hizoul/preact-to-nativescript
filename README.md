@@ -8,7 +8,7 @@ The following is assumed to be executed at the project root of a NativeScript Pr
 ```bash
 npm i preact-to-nativescript
 ```
-2. Start your Application via preact-to-nativescript
+2. Adjust your NativeScript app.js
 ```javascript
 var application = require("application")
 var render = require("preact-to-nativescript").render
@@ -19,9 +19,10 @@ application.start({
   }
 })
 ```
+3. Run your NativeScript app
 
 # Components
-The Usage example uses the plain javascript  [React.createElement / preact.h](https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-i-80263fe46cf1) syntax. If you appreciate syntactic sugar and like how the following code example looks be sure to try out [preact-nativescript-components](https://github.com/hizoul/preact-nativescript-components)
+The usage example uses the plain javascript  [React.createElement / preact.h](https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-i-80263fe46cf1) syntax. If you prefer JSX check out [preact-nativescript-components](https://github.com/hizoul/preact-nativescript-components) which makes the code look like so:
 ```javascript
 var application = require("application")
 import { render } from "preact-to-nativescript"
