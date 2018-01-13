@@ -1,0 +1,8 @@
+__tests__
+.vscode
+coverage
+node_modules
+index.js
+preact.js
+.babelrc
+.eslintrc.js
