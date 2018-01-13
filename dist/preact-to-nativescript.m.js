@@ -587,12 +587,16 @@ var preact$2 = {
 	unmountComponent: unmountComponent
 };
 
-function findWhere(arr, fn, returnIndex, byValueOnly) {
+function findWhere(arr, fn, returnIndex) {
     var i = arr.length;
     while (i--) 
-        { if (typeof fn === "function" && !byValueOnly ? fn(arr[i]) : arr[i] === fn) 
+        { if (typeof fn === "function" ? fn(arr[i]) : arr[i] === fn) 
         { break; } }
     return returnIndex ? i : arr[i];
+}
+
+function noOp() {
+    return null;
 }
 
 var extensions = {
@@ -611,7 +615,7 @@ var extensions = {
     setAttributeNS: function setAttributeNS(ignored, name, value) {
         this.set(name, value);
     },
-    removeAttributeNS: function removeAttributeNS(name) {
+    removeAttributeNS: function removeAttributeNS(ns, name) {
         delete this[name];
     },
     callAddChild: function callAddChild(child, offset) {
@@ -654,7 +658,7 @@ var extensions = {
         child.remove();
         var offset = this.childNodes.indexOf(ref);
         child.parentNode = this;
-        if (offset !== undefined && offset !== null) {
+        if (offset !== undefined && offset !== null && offset !== -1) {
             this.childNodes.splice(offset, 0, child);
             this.callAddChild(child, offset);
         } else {
@@ -739,6 +743,14 @@ var convertType = function (type) {
     }
     return newType;
 };
+var nodeValueGetSet = {
+    set: function set(v) {
+        this.text = v;
+    },
+    get: function get() {
+        return this.text;
+    }
+};
 var document$1 = {
     createElement: function createElement(type) {
         if (type === "undefined") {
@@ -763,30 +775,6 @@ var document$1 = {
                 }
             }
             Object.assign(NativeElement.prototype, extensions);
-            Object.defineProperty(NativeElement, "firstChild", {
-                get: function get() {
-                    return this.childNodes[0];
-                }
-            });
-            Object.defineProperty(NativeElement, "lastChild", {
-                get: function get() {
-                    return this.childNodes[this.childNodes.length - 1];
-                }
-            });
-            Object.defineProperty(NativeElement, "nextSibling", {
-                get: function get() {
-                    var p = this.parentNode;
-                    if (p) 
-                        { return p.childNodes[findWhere(p.childNodes, this, true) + 1]; }
-                }
-            });
-            Object.defineProperty(NativeElement, "previousSibling", {
-                get: function get() {
-                    var p = this.parentNode;
-                    if (p) 
-                        { return p.childNodes[findWhere(p.childNodes, this, true) - 1]; }
-                }
-            });
             types[type] = NativeElement;
         }
         NativeElement = new NativeElement();
@@ -799,20 +787,39 @@ var document$1 = {
         NativeElement.set = (function (name, value) {
             NativeElement[name] = value;
         });
+        Object.defineProperty(NativeElement, "firstChild", {
+            get: function get() {
+                return this.childNodes[0];
+            }
+        });
+        Object.defineProperty(NativeElement, "lastChild", {
+            get: function get() {
+                return this.childNodes[this.childNodes.length - 1];
+            }
+        });
+        Object.defineProperty(NativeElement, "nextSibling", {
+            get: function get() {
+                var p = this.parentNode;
+                if (p) {
+                    return p.childNodes[findWhere(p.childNodes, this, true) + 1];
+                }
+            }
+        });
+        Object.defineProperty(NativeElement, "previousSibling", {
+            get: function get() {
+                var p = this.parentNode;
+                if (p) {
+                    return p.childNodes[findWhere(p.childNodes, this, true) - 1];
+                }
+            }
+        });
         return NativeElement;
     },
     createTextNode: function createTextNode(text) {
         var el = document$1.createElement("label");
         el.text = text;
-        Object.defineProperty(el, "nodeValue", {
-            set: function set(v) {
-                this.text = v;
-            },
-            get: function get() {
-                return this.text;
-            }
-        });
-        el.splitText = (function () { return null; });
+        Object.defineProperty(el, "nodeValue", nodeValueGetSet);
+        el.splitText = noOp;
         return el;
     }
 };
@@ -857,6 +864,6 @@ var render = function (Component$$1, parent, merge) {
     return parent.childNodes[0];
 };
 
-export { preact$2 as Preact, render };
+export { preact$2 as Preact, render, nodeValueGetSet, findWhere, noOp };
 export default render;
 //# sourceMappingURL=preact-to-nativescript.m.js.map
