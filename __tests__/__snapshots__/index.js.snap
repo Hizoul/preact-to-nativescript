@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Basic Render: after remove 1`] = `
+Page {
+  "__n": "page",
+  "__preactattr_": Object {},
+  "attributes": Array [],
+  "childNodes": Array [],
+  "content": null,
+  "firstLoad": true,
+  "loaded": false,
+  "mergeInto": undefined,
+  "nodeName": "PAGE",
+  "nodeType": 1,
+  "parentNode": null,
+  "renderedComponent": VNode {
+    "attributes": undefined,
+    "children": Array [
+      VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": Object {
+                  "text": "myText",
+                },
+                "children": Array [],
+                "key": undefined,
+                "nodeName": "label",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "stackLayout",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "scrollView",
+      },
+    ],
+    "key": undefined,
+    "nodeName": "page",
+  },
+  "renderedInto": [Circular],
+  "set": [Function],
+}
+`;
+
 exports[`Basic Render: basic renderA 1`] = `
 Page {
   "__n": "page",
@@ -225,3 +272,23 @@ Page {
   "set": [Function],
 }
 `;
+
+exports[`nodeValueGetSet: expectation for undefined creation 1`] = `
+StackLayout {
+  "attributes": Array [],
+  "childNodes": Array [],
+  "firstLoad": true,
+  "loaded": false,
+  "nodeName": "STACKLAYOUT",
+  "nodeType": 1,
+  "set": [Function],
+}
+`;
+
+exports[`nodeValueGetSet: first child 1`] = `undefined`;
+
+exports[`nodeValueGetSet: last child 1`] = `undefined`;
+
+exports[`nodeValueGetSet: next sibling 1`] = `undefined`;
+
+exports[`nodeValueGetSet: previous sibling 1`] = `undefined`;

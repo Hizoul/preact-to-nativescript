@@ -188,24 +188,6 @@ const document = {
         }
       }
       Object.assign(NativeElement.prototype, extensions)
-      Object.defineProperty(NativeElement, "firstChild", {
-        get() { return this.childNodes[0] }
-      })
-      Object.defineProperty(NativeElement, "lastChild", {
-        get() { return this.childNodes[this.childNodes.length - 1] }
-      })
-      Object.defineProperty(NativeElement, "nextSibling", {
-        get() {
-          let p = this.parentNode
-          if (p) return p.childNodes[findWhere(p.childNodes, this, true) + 1]
-        }
-      })
-      Object.defineProperty(NativeElement, "previousSibling", {
-        get() {
-          let p = this.parentNode
-          if (p) return p.childNodes[findWhere(p.childNodes, this, true) - 1]
-        }
-      })
       types[type] = NativeElement
     }
     NativeElement = new NativeElement()
@@ -218,6 +200,24 @@ const document = {
     NativeElement.set = (name, value) => {
       NativeElement[name] = value
     }
+    Object.defineProperty(NativeElement, "firstChild", {
+      get() { return this.childNodes[0] }
+    })
+    Object.defineProperty(NativeElement, "lastChild", {
+      get() { return this.childNodes[this.childNodes.length - 1] }
+    })
+    Object.defineProperty(NativeElement, "nextSibling", {
+      get() {
+        let p = this.parentNode
+        if (p) return p.childNodes[findWhere(p.childNodes, this, true) + 1]
+      }
+    })
+    Object.defineProperty(NativeElement, "previousSibling", {
+      get() {
+        let p = this.parentNode
+        if (p) return p.childNodes[findWhere(p.childNodes, this, true) - 1]
+      }
+    })
     return NativeElement
   },
   createTextNode(text) {
