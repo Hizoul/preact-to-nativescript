@@ -1,9 +1,13 @@
 // stuff to mix into NS's view prototypes
 // mostly copied from Node in undom (https://github.com/developit/undom/blob/master/src/undom.js)
-function findWhere(arr, fn, returnIndex, byValueOnly) {
+function findWhere(arr, fn, returnIndex) {
   let i = arr.length
-  while (i--) if (typeof fn === "function" && !byValueOnly ? fn(arr[i]) : arr[i] === fn) break
+  while (i--) if (typeof fn === "function" ? fn(arr[i]) : arr[i] === fn) break
   return returnIndex ? i : arr[i]
+}
+
+function noOp() {
+  return null
 }
 
 let extensions = {
@@ -22,7 +26,7 @@ let extensions = {
   setAttributeNS(ignored, name, value) {
     this.set(name, value)
   },
-  removeAttributeNS(name) {
+  removeAttributeNS(ns, name) {
     delete this[name]
   },
   // Wrapper because some NativeScript Elements don't have addChild
@@ -67,7 +71,7 @@ let extensions = {
     // find the index at which to insert the child based on ref:
     let offset = this.childNodes.indexOf(ref)
     child.parentNode = this
-    if (offset !== undefined && offset !== null) {
+    if (offset !== undefined && offset !== null && offset !== -1) {
       this.childNodes.splice(offset, 0, child)
       this.callAddChild(child, offset)
     } else {
@@ -209,13 +213,17 @@ const document = {
     Object.defineProperty(NativeElement, "nextSibling", {
       get() {
         let p = this.parentNode
-        if (p) return p.childNodes[findWhere(p.childNodes, this, true) + 1]
+        if (p) {
+          return p.childNodes[findWhere(p.childNodes, this, true) + 1]
+        }
       }
     })
     Object.defineProperty(NativeElement, "previousSibling", {
       get() {
         let p = this.parentNode
-        if (p) return p.childNodes[findWhere(p.childNodes, this, true) - 1]
+        if (p) {
+          return p.childNodes[findWhere(p.childNodes, this, true) - 1]
+        }
       }
     })
     return NativeElement
@@ -224,7 +232,7 @@ const document = {
     let el = document.createElement("label")
     el.text = text
     Object.defineProperty(el, "nodeValue", nodeValueGetSet)
-    el.splitText = () => null
+    el.splitText = noOp
     return el
   }
 }
@@ -274,5 +282,5 @@ const render = (Component, parent, merge) => {
 
 export default render
 export {
-  Preact, render, nodeValueGetSet
+  Preact, render, nodeValueGetSet, findWhere, noOp
 }

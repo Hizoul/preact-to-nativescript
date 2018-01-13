@@ -1,0 +1,900 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Element insertBefore / replaceWith: children after insertBefore with valid ref 1`] = `
+Array [
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": Label {
+        "__n": "label",
+        "__preactattr_": Object {
+          "text": "myText",
+        },
+        "attributes": Array [],
+        "childNodes": Array [],
+        "firstLoad": true,
+        "loaded": false,
+        "mergeInto": undefined,
+        "nodeName": "LABEL",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "renderedComponent": VNode {
+          "attributes": Object {
+            "text": "myText",
+          },
+          "children": Array [],
+          "key": undefined,
+          "nodeName": "label",
+        },
+        "renderedInto": [Circular],
+        "set": [Function],
+        "text": "myText",
+      },
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": [Circular],
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": Label {
+        "__n": "label",
+        "__preactattr_": Object {
+          "text": "myText",
+        },
+        "attributes": Array [],
+        "childNodes": Array [],
+        "firstLoad": true,
+        "loaded": false,
+        "mergeInto": undefined,
+        "nodeName": "LABEL",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "renderedComponent": VNode {
+          "attributes": Object {
+            "text": "myText",
+          },
+          "children": Array [],
+          "key": undefined,
+          "nodeName": "label",
+        },
+        "renderedInto": [Circular],
+        "set": [Function],
+        "text": "myText",
+      },
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+]
+`;
+
+exports[`Test Element insertBefore / replaceWith: children after insertBefore without ref 1`] = `
+Array [
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": Label {
+        "__n": "label",
+        "__preactattr_": Object {
+          "text": "myText",
+        },
+        "attributes": Array [],
+        "childNodes": Array [],
+        "firstLoad": true,
+        "loaded": false,
+        "mergeInto": undefined,
+        "nodeName": "LABEL",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "renderedComponent": VNode {
+          "attributes": Object {
+            "text": "myText",
+          },
+          "children": Array [],
+          "key": undefined,
+          "nodeName": "label",
+        },
+        "renderedInto": [Circular],
+        "set": [Function],
+        "text": "myText",
+      },
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": [Circular],
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+]
+`;
+
+exports[`Test Element insertBefore / replaceWith: children after regular render 1`] = `
+Array [
+  ScrollView {
+    "__n": "scrollView",
+    "__preactattr_": Object {},
+    "attributes": Array [],
+    "childNodes": Array [
+      StackLayout {
+        "__n": "stackLayout",
+        "__preactattr_": Object {},
+        "attributes": Array [],
+        "childNodes": Array [
+          Label {
+            "__n": "label",
+            "__preactattr_": Object {
+              "text": "myText",
+            },
+            "attributes": Array [],
+            "childNodes": Array [],
+            "firstLoad": true,
+            "loaded": false,
+            "nodeName": "LABEL",
+            "nodeType": 1,
+            "parentNode": [Circular],
+            "set": [Function],
+            "text": "myText",
+          },
+        ],
+        "firstLoad": true,
+        "loaded": false,
+        "nodeName": "STACKLAYOUT",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "set": [Function],
+      },
+    ],
+    "content": StackLayout {
+      "__n": "stackLayout",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": Array [
+        Label {
+          "__n": "label",
+          "__preactattr_": Object {
+            "text": "myText",
+          },
+          "attributes": Array [],
+          "childNodes": Array [],
+          "firstLoad": true,
+          "loaded": false,
+          "nodeName": "LABEL",
+          "nodeType": 1,
+          "parentNode": [Circular],
+          "set": [Function],
+          "text": "myText",
+        },
+      ],
+      "firstLoad": true,
+      "loaded": false,
+      "nodeName": "STACKLAYOUT",
+      "nodeType": 1,
+      "parentNode": [Circular],
+      "set": [Function],
+    },
+    "firstLoad": true,
+    "loaded": false,
+    "nodeName": "SCROLLVIEW",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": [Circular],
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "set": [Function],
+  },
+]
+`;
+
+exports[`Test Element insertBefore / replaceWith: children after replace child 1`] = `
+Array [
+  Label {
+    "__n": "label",
+    "__preactattr_": Object {
+      "text": "myText",
+    },
+    "attributes": Array [],
+    "childNodes": Array [],
+    "firstLoad": true,
+    "loaded": false,
+    "mergeInto": undefined,
+    "nodeName": "LABEL",
+    "nodeType": 1,
+    "parentNode": Page {
+      "__n": "page",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": [Circular],
+      "content": [Circular],
+      "firstLoad": true,
+      "loaded": false,
+      "mergeInto": undefined,
+      "nodeName": "PAGE",
+      "nodeType": 1,
+      "parentNode": Object {
+        "appendChild": [Function],
+        "attributes": Array [],
+        "childNodes": Array [
+          [Circular],
+        ],
+        "mergeInto": undefined,
+        "nodeName": "artificalParent",
+        "nodeType": "artificalParent",
+        "remove": [Function],
+        "removeChild": [Function],
+        "renderedComponent": VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": undefined,
+                  "children": Array [
+                    VNode {
+                      "attributes": Object {
+                        "text": "myText",
+                      },
+                      "children": Array [],
+                      "key": undefined,
+                      "nodeName": "label",
+                    },
+                  ],
+                  "key": undefined,
+                  "nodeName": "stackLayout",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "scrollView",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "page",
+        },
+        "renderedInto": null,
+      },
+      "renderedComponent": VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": undefined,
+                "children": Array [
+                  VNode {
+                    "attributes": Object {
+                      "text": "myText",
+                    },
+                    "children": Array [],
+                    "key": undefined,
+                    "nodeName": "label",
+                  },
+                ],
+                "key": undefined,
+                "nodeName": "stackLayout",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "scrollView",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "page",
+      },
+      "renderedInto": [Circular],
+      "set": [Function],
+    },
+    "renderedComponent": VNode {
+      "attributes": Object {
+        "text": "myText",
+      },
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "label",
+    },
+    "renderedInto": [Circular],
+    "set": [Function],
+    "text": "myText",
+  },
+]
+`;

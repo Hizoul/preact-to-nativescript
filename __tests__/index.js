@@ -89,9 +89,14 @@ test("nodeValueGetSet", () => {
 
   const element = global.document.createElement("page")
   element.addChild(global.document.createElement("stackLayout"))
-  expect(element.previousSibling).toMatchSnapshot("previous sibling")
-  expect(element.nextSibling).toMatchSnapshot("next sibling")
   expect(element.lastChild).toMatchSnapshot("last child")
   expect(element.firstChild).toMatchSnapshot("first child")
   expect(global.document.createElement("undefined")).toMatchSnapshot("expectation for undefined creation")
+  element.parentNode = {
+    childNodes: [
+      {nodeName: "diff"}, element, {nodeName: "erent"}
+    ]
+  }
+  expect(element.previousSibling).toMatchSnapshot("previous sibling")
+  expect(element.nextSibling).toMatchSnapshot("next sibling")
 })

@@ -289,6 +289,14 @@ exports[`nodeValueGetSet: first child 1`] = `undefined`;
 
 exports[`nodeValueGetSet: last child 1`] = `undefined`;
 
-exports[`nodeValueGetSet: next sibling 1`] = `undefined`;
+exports[`nodeValueGetSet: next sibling 1`] = `
+Object {
+  "nodeName": "erent",
+}
+`;
 
-exports[`nodeValueGetSet: previous sibling 1`] = `undefined`;
+exports[`nodeValueGetSet: previous sibling 1`] = `
+Object {
+  "nodeName": "diff",
+}
+`;
