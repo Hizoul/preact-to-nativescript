@@ -135,7 +135,6 @@ function idiff(dom, vnode, context, mountAll, componentRoot) {
     if ('function' == typeof vnodeName) return buildComponentFromVNode(dom, vnode, context, mountAll);
     isSvgMode = 'svg' === vnodeName ? !0 : 'foreignObject' === vnodeName ? !1 : isSvgMode;
     vnodeName = String(vnodeName);
-    console.log("making diff of", vnodeName)
     if (!dom || !isNamedNode(dom, vnodeName)) {
         out = createNode(vnodeName, isSvgMode);
         if (dom) {

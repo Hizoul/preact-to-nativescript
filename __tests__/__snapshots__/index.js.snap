@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Render: basic renderA 1`] = `
+<page>
+  <scrollview>
+    <stacklayout>
+      <label
+        text="myText"
+      />
+    </stacklayout>
+  </scrollview>
+</page>
+`;

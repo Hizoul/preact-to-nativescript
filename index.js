@@ -134,8 +134,6 @@ let extensions = {
     }
   },
   remount() {
-    // this.renderedInto = Preact.render(this.renderedComponent)
-    // this.content = this.renderedInto.content
   }
 }
 const isUpperCase = (inspect) => inspect === inspect.toUpperCase()
@@ -214,32 +212,6 @@ const document = {
     NativeElement.set = (name, value) => {
       NativeElement[name] = value
     }
-    // if (type === "page") {
-    //   // loaded and unloaded for possible native navigation but remount not working yet
-    //   NativeElement.on("unloaded", (a, b) => {
-    //     console.log(`unloaded page ${typeof(a)} ${typeof(b)}`, Object.keys(a))
-    //     if (NativeElement.loaded) {
-    //       NativeElement.remove()
-    //     }
-    //     NativeElement.loaded = false
-    //   })
-    //   NativeElement.on("loaded", (a, b) => {
-    //     console.log(`loaded page ${typeof(a)} ${typeof(b)}`, Object.keys(a))
-    //     if (!NativeElement.firstLoad && !NativeElement.loaded) {
-    //       NativeElement.remount()
-    //     }
-    //     if (NativeElement.firstLoad) {
-    //       NativeElement.firstLoad = false
-    //     }
-    //     NativeElement.loaded = true
-    //     NativeElement.on("_tearDownUI", (a) => {
-    //       console.log(`got teardown ui`, Object.keys(a))
-    //     })
-    //     NativeElement.on("_removeViewFromNativeVisualTree", (a) => {
-    //       console.log(`got teardown ui`, Object.keys(a))
-    //     })
-    //   })
-    // }
     return NativeElement
   },
   createTextNode(text) {
@@ -274,7 +246,7 @@ const render = (Component, parent, merge) => {
           newChild.addCssFile(newChild.cssFile)
         }
         parent.childNodes.push(newChild)
-        newChild.parentNode = parent
+        // newChild.parentNode = parent
         newChild.renderedComponent = parent.renderedComponent
         newChild.mergeInto = parent.mergeInto
       },
@@ -285,14 +257,6 @@ const render = (Component, parent, merge) => {
         }
       },
       remove: () => {
-        // for (const child of parent.childNodes) {
-        //   child.remove()
-        // }
-        // delete parent.nodeType
-        // delete parent.nodeName
-        // delete parent.attributes
-        // delete parent.childNodes
-        // parent = null
       }
     }
   }
