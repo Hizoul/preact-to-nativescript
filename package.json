@@ -19,22 +19,27 @@
     "microbundle": "^0.2.4"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "build": "./node_modules/.bin/microbundle index.js",
     "dev": "./node_modules/.bin/microbundle watch index.js",
     "test": "./node_modules/.bin/jest --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
-    "preact": "^8.2.7"
+    "preact": "^8.2.7",
+    "preact-nativescript-mock": "0.0.1"
   },
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "coveragePathIgnorePatterns": ["/node_modules/", "/preact.js"],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/preact.js"
+    ],
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "tns-core-modules(.*)": "../preact-nativescript-mock$1"
+      "tns-core-modules(.*)": "preact-nativescript-mock$1"
     }
   }
 }
