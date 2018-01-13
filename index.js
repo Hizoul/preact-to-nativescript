@@ -1,29 +1,24 @@
-function findWhere(arr, fn, returnIndex, byValueOnly) {
-	let i = arr.length;
-	while (i--) if (typeof fn==='function' && !byValueOnly ? fn(arr[i]) : arr[i]===fn) break;
-	return returnIndex ? i : arr[i];
-}
-
-
 // stuff to mix into NS's view prototypes
 // mostly copied from Node in undom (https://github.com/developit/undom/blob/master/src/undom.js)
+function findWhere(arr, fn, returnIndex, byValueOnly) {
+  let i = arr.length
+  while (i--) if (typeof fn === "function" && !byValueOnly ? fn(arr[i]) : arr[i] === fn) break
+  return returnIndex ? i : arr[i]
+}
 let extensions = {
   setAttribute(name, value) {
-    console.log("about to set attribute " + name + " to  " + value)
     this.set(name, value)
   },
   getAttribute(name) {
     return this[name]
   },
   removeAttribute(name) {
-    console.log("about to remove attggibute " + name)
-    this.set(name, null);
+    this.set(name, null)
   },
   getAttributeNS(ignored, name, value) {
     return this[name]
   },
   setAttributeNS(ignored, name, value) {
-    console.log("about to set attribute " + name + " to  " + value)
     this.set(name, value)
   },
   removeAttributeNS(name) {
@@ -45,9 +40,7 @@ let extensions = {
       if (child.nodeName === "ACTIONITEM") {
         this.actionItems.addItem(child)
       } else if (child.nodeName === "NAVIGATIONBUTTON") {
-        console.log("SETTING NAVBUTT")
         this.navigationButton = child
-        console.log("successfully set navbutt")
       } else {
         this.titleView = child
       }
@@ -58,37 +51,31 @@ let extensions = {
     } else {
       this.addChild(child, offset)
     }
-    
   },
   appendChild(child) {
-    console.log(`appending ${child.nodeName} to ${this.nodeName}`, Object.keys(this))
-    if ('text' in this && child.splitText!=null) {
-      this.text = child.nodeValue;
-    }
-    else {
+    if ("text" in this && child.splitText !== null) {
+      this.text = child.nodeValue
+    } else {
       this.childNodes.push(child)
       child.parentNode = this
     }
     this.callAddChild(child)
   },
   insertBefore(child, ref) {
-    console.log(`inserting ${child.nodeName} before ${ref.nodeName} in  ${this.nodeName}`)
     child.remove()
     // find the index at which to insert the child based on ref:
     let offset = this.childNodes.indexOf(ref)
     child.parentNode = this
-    console.log(`found offset is ${offset} ${this.childNodes.length}`)
     if (offset !== undefined && offset !== null) {
       this.childNodes.splice(offset, 0, child)
-      this.callAddChild(child, offset);
+      this.callAddChild(child, offset)
     } else {
       this.childNodes.push(child)
       this.callAddChild(child)
     }
   },
   replaceChild(child, ref) {
-    console.log(`replacing ${child.nodeName} with ${ref.nodeName}`)
-    if (ref.parentNode===this) {
+    if (ref.parentNode === this) {
       ref.remove()
       this.insertBefore(child, ref)
     }
@@ -126,18 +113,16 @@ let extensions = {
         this.removeChild(child)
       }
     }
-    
   },
   removeChild(child) {
-    console.log(`removing ${child.nodeName} from ${this.nodeName}`)
-    if ('text' in this && child.splitText!=null) {
-      this.text = '';
+    if ("text" in this && child.splitText !== null) {
+      this.text = ""
     } else {
       const childIndex = this.childNodes.indexOf(child)
       if (childIndex !== -1) {
         this.childNodes.splice(childIndex, 1)
       }
-      this.callRemoveChild(child);
+      this.callRemoveChild(child)
     }
     child.parentNode = null
   },
@@ -152,7 +137,7 @@ let extensions = {
     // this.renderedInto = Preact.render(this.renderedComponent)
     // this.content = this.renderedInto.content
   }
-};
+}
 const isUpperCase = (inspect) => inspect === inspect.toUpperCase()
 
 const convertType = (type) => {
@@ -181,98 +166,98 @@ const document = {
     // imports and augments NS view classes on first use
     const originalType = type
     type = type.toLowerCase()
-    let el
+    let NativeElement
     if (type in types) {
-      el = types[type];
+      NativeElement = types[type]
     } else {
-      let elementRequirePath = 'tns-core-modules/ui/'
+      let elementRequirePath = "tns-core-modules/ui/"
       if (type.indexOf("layout") !== -1) {
         elementRequirePath += "layouts/"
       }
       elementRequirePath += convertType(originalType)
-      let m = require(elementRequirePath);
+      let m = require(elementRequirePath)
       // find matching named export:
-      for (let i in m) if (i.toLowerCase()===type) {
-        el = m[i];
-        break;
+      for (let i in m) {
+        if (i.toLowerCase() === type) {
+          NativeElement = m[i]
+          break
+        }
       }
-      Object.assign(el.prototype, extensions);
-      Object.defineProperty(el, 'firstChild', {
+      Object.assign(NativeElement.prototype, extensions)
+      Object.defineProperty(NativeElement, "firstChild", {
         get() { return this.childNodes[0] }
       })
-      Object.defineProperty(el, 'lastChild', {
-        get() { return this.childNodes[this.childNodes.length-1] }
+      Object.defineProperty(NativeElement, "lastChild", {
+        get() { return this.childNodes[this.childNodes.length - 1] }
       })
-      Object.defineProperty(el, 'nextSibling', {
+      Object.defineProperty(NativeElement, "nextSibling", {
         get() {
           let p = this.parentNode
           if (p) return p.childNodes[findWhere(p.childNodes, this, true) + 1]
         }
       })
-      Object.defineProperty(el, 'previousSibling', {
+      Object.defineProperty(NativeElement, "previousSibling", {
         get() {
           let p = this.parentNode
           if (p) return p.childNodes[findWhere(p.childNodes, this, true) - 1]
         }
       })
-      types[type] = el;
+      types[type] = NativeElement
     }
-    el = new el()
-    el.loaded = false
-    el.firstLoad = true
-    el.nodeType = 1
-    el.nodeName = type.toUpperCase()                                                   
-    el.attributes = []
-    el.childNodes = []
-    el.set = (name, value) => {
-      console.log("callinggset with " + name + " and " + value)
-      el[name] = value
+    NativeElement = new NativeElement()
+    NativeElement.loaded = false
+    NativeElement.firstLoad = true
+    NativeElement.nodeType = 1
+    NativeElement.nodeName = type.toUpperCase()
+    NativeElement.attributes = []
+    NativeElement.childNodes = []
+    NativeElement.set = (name, value) => {
+      NativeElement[name] = value
     }
     // if (type === "page") {
     //   // loaded and unloaded for possible native navigation but remount not working yet
-    //   el.on("unloaded", (a, b) => {
+    //   NativeElement.on("unloaded", (a, b) => {
     //     console.log(`unloaded page ${typeof(a)} ${typeof(b)}`, Object.keys(a))
-    //     if (el.loaded) {
-    //       el.remove()
+    //     if (NativeElement.loaded) {
+    //       NativeElement.remove()
     //     }
-    //     el.loaded = false
+    //     NativeElement.loaded = false
     //   })
-    //   el.on("loaded", (a, b) => {
+    //   NativeElement.on("loaded", (a, b) => {
     //     console.log(`loaded page ${typeof(a)} ${typeof(b)}`, Object.keys(a))
-    //     if (!el.firstLoad && !el.loaded) {
-    //       el.remount()
+    //     if (!NativeElement.firstLoad && !NativeElement.loaded) {
+    //       NativeElement.remount()
     //     }
-    //     if (el.firstLoad) {
-    //       el.firstLoad = false
+    //     if (NativeElement.firstLoad) {
+    //       NativeElement.firstLoad = false
     //     }
-    //     el.loaded = true
-    //     el.on("_tearDownUI", (a) => {
+    //     NativeElement.loaded = true
+    //     NativeElement.on("_tearDownUI", (a) => {
     //       console.log(`got teardown ui`, Object.keys(a))
     //     })
-    //     el.on("_removeViewFromNativeVisualTree", (a) => {
+    //     NativeElement.on("_removeViewFromNativeVisualTree", (a) => {
     //       console.log(`got teardown ui`, Object.keys(a))
     //     })
     //   })
     // }
-    return el
+    return NativeElement
   },
   createTextNode(text) {
-    console.log("creating textnode" + text)
-    let el = document.createElement("label");
-    el.text = text;
-    Object.defineProperty(el, 'nodeValue', {
+    let el = document.createElement("label")
+    el.text = text
+    Object.defineProperty(el, "nodeValue", {
       set(v) { this.text = v },
       get() { return this.text }
-    });
-    el.splitText = () => null;
-    return el;
+    })
+    el.splitText = () => null
+    return el
   }
 }
 
 global.document = document
 import * as Preact from "./preact"
-var h = Preact.h
-let types = {};
+
+let types = {}
 // preact-render-to-nativescript
 const render = (Component, parent, merge) => {
   if (parent === undefined || parent === null) {
@@ -294,14 +279,12 @@ const render = (Component, parent, merge) => {
         newChild.mergeInto = parent.mergeInto
       },
       removeChild: (child) => {
-        console.log("attempting to remove body child")
         const childIndex = parent.childNodes.indexOf(child)
         if (childIndex !== -1) {
           parent.childNodes.splice(childIndex, 1)
         }
       },
       remove: () => {
-        console.log("attempting to remove body")
         // for (const child of parent.childNodes) {
         //   child.remove()
         // }
