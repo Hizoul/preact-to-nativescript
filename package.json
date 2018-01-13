@@ -31,6 +31,10 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "coveragePathIgnorePatterns": ["/node_modules/", "/preact.js"]
+    "coveragePathIgnorePatterns": ["/node_modules/", "/preact.js"],
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "tns-core-modules(.*)": "../preact-nativescript-mock$1"
+    }
   }
 }

@@ -1,13 +1,185 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Basic Render: basic renderA 1`] = `
-<page>
-  <scrollview>
-    <stacklayout>
-      <label
-        text="myText"
-      />
-    </stacklayout>
-  </scrollview>
-</page>
+Page {
+  "__n": "page",
+  "__preactattr_": Object {},
+  "attributes": Array [],
+  "childNodes": Array [
+    ScrollView {
+      "__n": "scrollView",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": Array [
+        StackLayout {
+          "__n": "stackLayout",
+          "__preactattr_": Object {},
+          "attributes": Array [],
+          "childNodes": Array [
+            Label {
+              "__n": "label",
+              "__preactattr_": Object {
+                "text": "myText",
+              },
+              "attributes": Array [],
+              "childNodes": Array [],
+              "firstLoad": true,
+              "loaded": false,
+              "nodeName": "LABEL",
+              "nodeType": 1,
+              "parentNode": [Circular],
+              "set": [Function],
+              "text": "myText",
+            },
+          ],
+          "firstLoad": true,
+          "loaded": false,
+          "nodeName": "STACKLAYOUT",
+          "nodeType": 1,
+          "parentNode": [Circular],
+          "set": [Function],
+        },
+      ],
+      "content": StackLayout {
+        "__n": "stackLayout",
+        "__preactattr_": Object {},
+        "attributes": Array [],
+        "childNodes": Array [
+          Label {
+            "__n": "label",
+            "__preactattr_": Object {
+              "text": "myText",
+            },
+            "attributes": Array [],
+            "childNodes": Array [],
+            "firstLoad": true,
+            "loaded": false,
+            "nodeName": "LABEL",
+            "nodeType": 1,
+            "parentNode": [Circular],
+            "set": [Function],
+            "text": "myText",
+          },
+        ],
+        "firstLoad": true,
+        "loaded": false,
+        "nodeName": "STACKLAYOUT",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "set": [Function],
+      },
+      "firstLoad": true,
+      "loaded": false,
+      "nodeName": "SCROLLVIEW",
+      "nodeType": 1,
+      "parentNode": [Circular],
+      "set": [Function],
+    },
+  ],
+  "content": ScrollView {
+    "__n": "scrollView",
+    "__preactattr_": Object {},
+    "attributes": Array [],
+    "childNodes": Array [
+      StackLayout {
+        "__n": "stackLayout",
+        "__preactattr_": Object {},
+        "attributes": Array [],
+        "childNodes": Array [
+          Label {
+            "__n": "label",
+            "__preactattr_": Object {
+              "text": "myText",
+            },
+            "attributes": Array [],
+            "childNodes": Array [],
+            "firstLoad": true,
+            "loaded": false,
+            "nodeName": "LABEL",
+            "nodeType": 1,
+            "parentNode": [Circular],
+            "set": [Function],
+            "text": "myText",
+          },
+        ],
+        "firstLoad": true,
+        "loaded": false,
+        "nodeName": "STACKLAYOUT",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "set": [Function],
+      },
+    ],
+    "content": StackLayout {
+      "__n": "stackLayout",
+      "__preactattr_": Object {},
+      "attributes": Array [],
+      "childNodes": Array [
+        Label {
+          "__n": "label",
+          "__preactattr_": Object {
+            "text": "myText",
+          },
+          "attributes": Array [],
+          "childNodes": Array [],
+          "firstLoad": true,
+          "loaded": false,
+          "nodeName": "LABEL",
+          "nodeType": 1,
+          "parentNode": [Circular],
+          "set": [Function],
+          "text": "myText",
+        },
+      ],
+      "firstLoad": true,
+      "loaded": false,
+      "nodeName": "STACKLAYOUT",
+      "nodeType": 1,
+      "parentNode": [Circular],
+      "set": [Function],
+    },
+    "firstLoad": true,
+    "loaded": false,
+    "nodeName": "SCROLLVIEW",
+    "nodeType": 1,
+    "parentNode": [Circular],
+    "set": [Function],
+  },
+  "firstLoad": true,
+  "loaded": false,
+  "mergeInto": undefined,
+  "nodeName": "PAGE",
+  "nodeType": 1,
+  "renderedComponent": VNode {
+    "attributes": undefined,
+    "children": Array [
+      VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [
+              VNode {
+                "attributes": Object {
+                  "text": "myText",
+                },
+                "children": Array [],
+                "key": undefined,
+                "nodeName": "label",
+              },
+            ],
+            "key": undefined,
+            "nodeName": "stackLayout",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "scrollView",
+      },
+    ],
+    "key": undefined,
+    "nodeName": "page",
+  },
+  "renderedInto": [Circular],
+  "set": [Function],
+}
 `;
