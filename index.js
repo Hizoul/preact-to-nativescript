@@ -289,7 +289,9 @@ const goBack = () => {
   topmost.goBack()
 }
 
+const h = Preact.h
+
 export default render
 export {
-  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack
+  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack, h
 }
