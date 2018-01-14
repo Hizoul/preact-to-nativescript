@@ -23,6 +23,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
+    "buildBook": "cd docs && gitbook build",
     "build": "./node_modules/.bin/microbundle index.js",
     "dev": "./node_modules/.bin/microbundle watch index.js",
     "test": "./node_modules/.bin/jest --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
