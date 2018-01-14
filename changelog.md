@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.4
+- Add convenience `navigateTo` and `goBack` Function as NativeScript Shortcuts
+- Add `h` export
+- Add Navigation Documentation
+
 ## 0.0.3
 - Fix typescript render declaration by making second and third argument optional
 
