@@ -3,7 +3,7 @@
 ## [Documentation](https://rawgit.com/Hizoul/preact-to-nativescript/master/docs/_book/index.html)
 
 # Usage
-The following is assumed to be executed at the project root of a NativeScript Project
+The following is assumed to be executed at the project root of a NativeScript project
 
 1. Install the library
 ```bash
@@ -24,33 +24,18 @@ application.start({
 ```
 3. Run your NativeScript app
 
-# Components
-The usage example uses the plain javascript  [React.createElement / preact.h](https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-i-80263fe46cf1) syntax. If you prefer JSX check out [preact-nativescript-components](https://github.com/hizoul/preact-nativescript-components) which makes the code look like so:
-```typescript
-import * as application from "tns-core-modules/application"
-import { render } from "preact-to-nativescript"
-import { Page, ActionBar, StackLayout, Label } from "preact-nativescript-components"
+# [Demo Application](https://github.com/Hizoul/preact-nativescript-demo)
+![Demo](https://github.com/Hizoul/proposal-for-preact-to-nativescript/raw/master/demo.gif)
 
-application.start({
-  create: () => {
-    return render(
-      <Page>
-        <ActionBar title="Custom Title" />
-        <StackLayout>
-          <Label text="preact-to-nativescript page">
-        </StackLayout>
-      </Page>
-    )
-  }
-})
-```
 
 # TBD
-- dont ship own preact version
+- [dont ship own preact version](https://github.com/developit/preact/pull/978)
 - Handle unmounting properly when navigating via Nativescripts API (custom routing in pure js works fine though!)
+- demo app custom router removechild seems to be off by one
 - ActionBar Known Limitations
   - SystemIcon is not respected
   - NavigationButton doesn't properly render
+- probably a lot more that isn't in scope yet
 
 # Credits
 - [developit](https://github.com/developit) by providing [this untested document implementation](https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569) that turned into the core of this library. He also authored [undom](https://github.com/developit/undom) from which some document mock code was borrowed. And he also authored [preact](https://github.com/developit/preact) without which this wouldn't even be possible.
