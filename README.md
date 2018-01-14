@@ -12,7 +12,9 @@ npm i preact-to-nativescript
 2. Adjust your NativeScript app.js
 ```javascript
 var application = require("application")
-var render = require("preact-to-nativescript").render
+var preactToNativeScript = require("preact-to-nativescript")
+var render = preactToNativeScript.render
+var h = preactToNativeScript.Preact.h
 
 application.start({
   create: () => {
@@ -24,8 +26,8 @@ application.start({
 
 # Components
 The usage example uses the plain javascript  [React.createElement / preact.h](https://hackernoon.com/understanding-the-react-source-code-initial-rendering-simple-component-i-80263fe46cf1) syntax. If you prefer JSX check out [preact-nativescript-components](https://github.com/hizoul/preact-nativescript-components) which makes the code look like so:
-```javascript
-var application = require("application")
+```typescript
+import * as application from "tns-core-modules/application"
 import { render } from "preact-to-nativescript"
 import { Page, ActionBar, StackLayout, Label } from "preact-nativescript-components"
 
@@ -44,12 +46,12 @@ application.start({
 ```
 
 # TBD
-- Docs
-- Handle Navigation via Nativescripts API (custom routing in pure js works fine though!)
+- dont ship own preact version
+- Handle unmounting properly when navigating via Nativescripts API (custom routing in pure js works fine though!)
 - ActionBar Known Limitations
   - SystemIcon is not respected
   - NavigationButton doesn't properly render
 
 # Credits
-- [developit](https://github.com/developit) by basically programming this library and making it possible without even knowing. He provided [this untested document implementation](https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569) which is the most important core part of this library. He also authored [undom](https://github.com/developit/undom) from which some document mock code was borrowed. And he also authored [preact](https://github.com/developit/preact) without which this wouldn't even be possible.
+- [developit](https://github.com/developit) by providing [this untested document implementation](https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569) that turned into the core of this library. He also authored [undom](https://github.com/developit/undom) from which some document mock code was borrowed. And he also authored [preact](https://github.com/developit/preact) without which this wouldn't even be possible.
 - [staydecent](https://github.com/staydecent) for providing [a code example](https://github.com/staydecent/nativescript-preact) that showed that preact-to-nativescript is not impossible wizardry but achievable by writing the right wrapper

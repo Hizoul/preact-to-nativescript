@@ -18,11 +18,11 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^22.0.6",
-    "microbundle": "^0.2.4",
-    "preact-nativescript-mock": "0.0.2"
+    "microbundle": "^0.3.0",
+    "preact-nativescript-mock": "0.0.4"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "`prepare`": "npm run build",
     "buildBook": "cd docs && gitbook build",
     "build": "./node_modules/.bin/microbundle index.js",
     "dev": "./node_modules/.bin/microbundle watch index.js",

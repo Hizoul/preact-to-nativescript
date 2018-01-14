@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navigateTo: didnt navigate yet 1`] = `"nowhere yet"`;
+
+exports[`navigateTo: navigated to page 1`] = `
+Page {
+  "__n": "page",
+  "__preactattr_": Object {},
+  "attributes": Array [],
+  "childNodes": Array [],
+  "firstLoad": true,
+  "loaded": false,
+  "mergeInto": undefined,
+  "nodeName": "PAGE",
+  "nodeType": 1,
+  "parentNode": Object {
+    "appendChild": [Function],
+    "attributes": Array [],
+    "childNodes": Array [
+      [Circular],
+    ],
+    "mergeInto": undefined,
+    "nodeName": "artificalParent",
+    "nodeType": "artificalParent",
+    "remove": [Function],
+    "removeChild": [Function],
+    "renderedComponent": VNode {
+      "attributes": undefined,
+      "children": Array [],
+      "key": undefined,
+      "nodeName": "page",
+    },
+    "renderedInto": null,
+  },
+  "renderedComponent": VNode {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": "page",
+  },
+  "renderedInto": [Circular],
+  "set": [Function],
+}
+`;

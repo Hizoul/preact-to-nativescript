@@ -280,7 +280,16 @@ const render = (Component, parent, merge) => {
   return parent.childNodes[0]
 }
 
+const navigateTo = (comp) => {
+  const topmost = require("tns-core-modules/ui/frame").topmost()
+  topmost.navigate(() => render(comp))
+}
+const goBack = () => {
+  const topmost = require("tns-core-modules/ui/frame").topmost()
+  topmost.goBack()
+}
+
 export default render
 export {
-  Preact, render, nodeValueGetSet, findWhere, noOp
+  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack
 }
