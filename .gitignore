@@ -4,6 +4,7 @@
 .code
 lib
 es
+dist
 
 ### macOS ###
 *.DS_Store
