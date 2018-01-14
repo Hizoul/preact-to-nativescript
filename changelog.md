@@ -1,5 +1,10 @@
 # Changelog
 
+
+## 0.0.5
+- Add `Component` export
+- Improve TypeScript Typings
+
 ## 0.0.4
 - Add convenience `navigateTo` and `goBack` Function as NativeScript Shortcuts
 - Add `h` export

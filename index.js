@@ -290,8 +290,9 @@ const goBack = () => {
 }
 
 const h = Preact.h
+const Component = Preact.Component
 
 export default render
 export {
-  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack, h
+  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack, h, Component
 }
