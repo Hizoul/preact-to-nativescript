@@ -3,7 +3,6 @@ import * as frame from "tns-core-modules/ui/frame"
 
 test("navigateTo", () => {
   const topmost = frame.topmost()
-  console.log("got topmost", topmost)
   expect(topmost.navigatedTo).toMatchSnapshot("didnt navigate yet")
   expect(topmost.backCallAmount).toBe(0)
   navigateTo(Preact.h("page"))

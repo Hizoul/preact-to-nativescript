@@ -25,14 +25,14 @@ test("Basic Render", () => {
   let calledRemoveChild = false
   let calledRemoveView = false
   rendered.nodeName = "np"
-  rendered.removeChild = () => {
+  rendered.origRemoveChild = () => {
     calledRemoveChild = true
   }
   rendered.callRemoveChild({
     nodeName: "ac"
   })
   expect(calledRemoveChild).toBeTruthy()
-  rendered.removeChild = null
+  rendered.origRemoveChild = null
   rendered._removeView = () => {
     calledRemoveView = true
   }

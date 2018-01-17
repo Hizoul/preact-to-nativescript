@@ -61,28 +61,28 @@ let extensions = {
     if ("text" in this && child.splitText !== null) {
       this.text = child.nodeValue
     } else {
+      this.callAddChild(child)
       this.childNodes.push(child)
       child.parentNode = this
     }
-    this.callAddChild(child)
   },
   insertBefore(child, ref) {
     child.remove()
     // find the index at which to insert the child based on ref:
     let offset = this.childNodes.indexOf(ref)
-    child.parentNode = this
     if (offset !== undefined && offset !== null && offset !== -1) {
-      this.childNodes.splice(offset, 0, child)
       this.callAddChild(child, offset)
+      this.childNodes.splice(offset, 0, child)
     } else {
-      this.childNodes.push(child)
       this.callAddChild(child)
+      this.childNodes.push(child)
     }
+    child.parentNode = this
   },
   replaceChild(child, ref) {
     if (ref.parentNode === this) {
-      ref.remove()
       this.insertBefore(child, ref)
+      ref.remove()
     }
   },
   // Wrapper because some NativeScript Elements don't have removeChild
@@ -112,30 +112,30 @@ let extensions = {
     } else if (this.nodeName === "SCROLLVIEW") {
       this.content = null
     } else {
-      if (this.removeChild === undefined || this.removeChild === null) {
+      if (this.origRemoveChild === undefined || this.origRemoveChild === null) {
         this._removeView(child)
       } else {
-        this.removeChild(child)
+        this.origRemoveChild(child)
       }
     }
   },
   removeChild(child) {
     if ("text" in this && child.splitText !== null) {
       this.text = ""
+      child.parentNode = null
     } else {
       const childIndex = this.childNodes.indexOf(child)
       if (childIndex !== -1) {
+        this.callRemoveChild(child)
         this.childNodes.splice(childIndex, 1)
+        child.parentNode = null
       }
-      this.callRemoveChild(child)
     }
-    child.parentNode = null
   },
   // loaded and unloaded for possible native navigation but remount not working yet
   remove() {
     if (this.parentNode) {
       this.parentNode.removeChild(this)
-      this.parentNode = null
     }
   },
   remount() {
@@ -191,6 +191,7 @@ const document = {
           break
         }
       }
+      NativeElement.prototype.origRemoveChild = NativeElement.prototype.removeChild
       Object.assign(NativeElement.prototype, extensions)
       types[type] = NativeElement
     }
@@ -267,6 +268,7 @@ const render = (Component, parent, merge) => {
           parent.childNodes.splice(childIndex, 1)
         }
       },
+      _removeView: () => {},
       remove: () => {
       }
     }

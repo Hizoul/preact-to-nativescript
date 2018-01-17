@@ -1,6 +1,6 @@
 {
   "name": "preact-to-nativescript",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Render Preact-Components to NativeScript",
   "main": "dist/preact-to-nativescript.js",
   "repository": "https://github.com/hizoul/preact-to-nativescript",
@@ -18,8 +18,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^22.0.6",
-    "microbundle": "^0.3.0",
-    "preact-nativescript-mock": "0.0.5"
+    "microbundle": "^0.3.0"
   },
   "scripts": {
     "`prepare`": "npm run build",
@@ -29,7 +28,8 @@
     "test": "./node_modules/.bin/jest --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "preact": "^8.2.7"
+    "preact": "^8.2.7",
+    "preact-nativescript-mock": "file:../preact-nativescript-mock"
   },
   "jest": {
     "transform": {

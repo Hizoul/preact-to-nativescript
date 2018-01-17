@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.0.6
+- Fix incorrect component removal (custom-router in demo app now works as intended)
 
 ## 0.0.5
 - Add `Component` export

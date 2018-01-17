@@ -53,6 +53,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -164,6 +165,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -300,6 +302,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -441,6 +444,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -552,6 +556,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -726,6 +731,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
@@ -832,6 +838,7 @@ Array [
       "nodeName": "PAGE",
       "nodeType": 1,
       "parentNode": Object {
+        "_removeView": [Function],
         "appendChild": [Function],
         "attributes": Array [],
         "childNodes": Array [
