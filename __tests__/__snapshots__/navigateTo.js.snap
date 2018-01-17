@@ -6,6 +6,7 @@ exports[`navigateTo: navigated to page 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,

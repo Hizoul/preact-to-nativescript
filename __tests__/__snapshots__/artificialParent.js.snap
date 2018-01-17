@@ -4,6 +4,7 @@ exports[`Basic Render: after append child 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,
@@ -58,6 +59,7 @@ exports[`Basic Render: after parent remove 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,
@@ -99,6 +101,7 @@ exports[`Basic Render: after remove child 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,
@@ -140,6 +143,7 @@ exports[`Basic Render: after render 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,

@@ -23,16 +23,19 @@ Page {
     "state": Object {},
   },
   "_componentConstructor": [Function],
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [
     StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         TabView {
           "__n": "tabView",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "actionItems": Object {
             "addItem": [Function],
             "removeItem": [Function],
@@ -45,11 +48,13 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -64,6 +69,7 @@ Page {
                         "2": "b",
                         "3": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -92,6 +98,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -106,6 +113,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -129,11 +137,13 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -148,6 +158,7 @@ Page {
                         "2": "b",
                         "3": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -176,6 +187,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -190,6 +202,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -213,11 +226,13 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -232,6 +247,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -260,6 +276,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -274,6 +291,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -297,11 +315,13 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -316,6 +336,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -344,6 +365,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -358,6 +380,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -384,11 +407,13 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -403,6 +428,7 @@ Page {
                         "2": "b",
                         "3": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -431,6 +457,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -445,6 +472,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -468,11 +496,13 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -487,6 +517,7 @@ Page {
                         "2": "b",
                         "3": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -515,6 +546,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -529,6 +561,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -552,11 +585,13 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -571,6 +606,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -599,6 +635,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -613,6 +650,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -636,11 +674,13 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -655,6 +695,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -683,6 +724,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -697,6 +739,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -734,11 +777,13 @@ Page {
   "content": StackLayout {
     "__n": "stackLayout",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       TabView {
         "__n": "tabView",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "actionItems": Object {
           "addItem": [Function],
           "removeItem": [Function],
@@ -751,11 +796,13 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -770,6 +817,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -798,6 +846,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -812,6 +861,7 @@ Page {
                     "2": "b",
                     "3": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -835,11 +885,13 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -854,6 +906,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -882,6 +935,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -896,6 +950,7 @@ Page {
                     "2": "b",
                     "3": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -919,11 +974,13 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -938,6 +995,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -966,6 +1024,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -980,6 +1039,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1003,11 +1063,13 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1022,6 +1084,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1050,6 +1113,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -1064,6 +1128,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1090,11 +1155,13 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1109,6 +1176,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1137,6 +1205,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -1151,6 +1220,7 @@ Page {
                     "2": "b",
                     "3": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1174,11 +1244,13 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1193,6 +1265,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1221,6 +1294,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -1235,6 +1309,7 @@ Page {
                     "2": "b",
                     "3": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1258,11 +1333,13 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1277,6 +1354,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1305,6 +1383,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -1319,6 +1398,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1342,11 +1422,13 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1361,6 +1443,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1389,6 +1472,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -1403,6 +1487,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -1496,16 +1581,19 @@ Page {
     },
   },
   "_componentConstructor": [Function],
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [
     StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         TabView {
           "__n": "tabView",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "actionItems": Object {
             "addItem": [Function],
             "removeItem": [Function],
@@ -1518,11 +1606,13 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1537,6 +1627,7 @@ Page {
                         "2": "b",
                         "3": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1565,6 +1656,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1579,6 +1671,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1602,11 +1695,13 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1621,6 +1716,7 @@ Page {
                         "2": "b",
                         "3": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1649,6 +1745,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1663,6 +1760,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1686,11 +1784,13 @@ Page {
               "__preactattr_": Object {
                 "title": "hasdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1707,6 +1807,7 @@ Page {
                         "3": "x",
                         "4": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1735,6 +1836,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1751,6 +1853,7 @@ Page {
                       "3": "x",
                       "4": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1774,11 +1877,13 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1793,6 +1898,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1821,6 +1927,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1835,6 +1942,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1858,11 +1966,13 @@ Page {
               "__preactattr_": Object {
                 "title": "mbvcm",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1879,6 +1989,7 @@ Page {
                         "3": "x",
                         "4": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1907,6 +2018,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -1923,6 +2035,7 @@ Page {
                       "3": "x",
                       "4": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -1946,11 +2059,13 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -1965,6 +2080,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -1993,6 +2109,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2007,6 +2124,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2030,11 +2148,13 @@ Page {
               "__preactattr_": Object {
                 "title": "123465",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2051,6 +2171,7 @@ Page {
                         "3": "x",
                         "4": "4",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2079,6 +2200,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2095,6 +2217,7 @@ Page {
                       "3": "x",
                       "4": "4",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2121,11 +2244,13 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2140,6 +2265,7 @@ Page {
                         "2": "b",
                         "3": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2168,6 +2294,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2182,6 +2309,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2205,11 +2333,13 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2224,6 +2354,7 @@ Page {
                         "2": "b",
                         "3": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2252,6 +2383,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2266,6 +2398,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2289,11 +2422,13 @@ Page {
               "__preactattr_": Object {
                 "title": "hasdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2310,6 +2445,7 @@ Page {
                         "3": "x",
                         "4": "1",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2338,6 +2474,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2354,6 +2491,7 @@ Page {
                       "3": "x",
                       "4": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2377,11 +2515,13 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2396,6 +2536,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2424,6 +2565,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2438,6 +2580,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2461,11 +2604,13 @@ Page {
               "__preactattr_": Object {
                 "title": "mbvcm",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2482,6 +2627,7 @@ Page {
                         "3": "x",
                         "4": "2",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2510,6 +2656,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2526,6 +2673,7 @@ Page {
                       "3": "x",
                       "4": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2549,11 +2697,13 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2568,6 +2718,7 @@ Page {
                         "2": "b",
                         "3": "3",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2596,6 +2747,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2610,6 +2762,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2633,11 +2786,13 @@ Page {
               "__preactattr_": Object {
                 "title": "123465",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 StackLayout {
                   "__n": "stackLayout",
                   "__preactattr_": Object {},
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [
                     Label {
@@ -2654,6 +2809,7 @@ Page {
                         "3": "x",
                         "4": "4",
                       },
+                      "_eventListener": Array [],
                       "attributes": Array [],
                       "childNodes": Array [],
                       "firstLoad": true,
@@ -2682,6 +2838,7 @@ Page {
               "view": StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2698,6 +2855,7 @@ Page {
                       "3": "x",
                       "4": "4",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2735,11 +2893,13 @@ Page {
   "content": StackLayout {
     "__n": "stackLayout",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       TabView {
         "__n": "tabView",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "actionItems": Object {
           "addItem": [Function],
           "removeItem": [Function],
@@ -2752,11 +2912,13 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2771,6 +2933,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2799,6 +2962,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -2813,6 +2977,7 @@ Page {
                     "2": "b",
                     "3": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -2836,11 +3001,13 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2855,6 +3022,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2883,6 +3051,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -2897,6 +3066,7 @@ Page {
                     "2": "b",
                     "3": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -2920,11 +3090,13 @@ Page {
             "__preactattr_": Object {
               "title": "hasdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -2941,6 +3113,7 @@ Page {
                       "3": "x",
                       "4": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -2969,6 +3142,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -2985,6 +3159,7 @@ Page {
                     "3": "x",
                     "4": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3008,11 +3183,13 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3027,6 +3204,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3055,6 +3233,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3069,6 +3248,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3092,11 +3272,13 @@ Page {
             "__preactattr_": Object {
               "title": "mbvcm",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3113,6 +3295,7 @@ Page {
                       "3": "x",
                       "4": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3141,6 +3324,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3157,6 +3341,7 @@ Page {
                     "3": "x",
                     "4": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3180,11 +3365,13 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3199,6 +3386,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3227,6 +3415,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3241,6 +3430,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3264,11 +3454,13 @@ Page {
             "__preactattr_": Object {
               "title": "123465",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3285,6 +3477,7 @@ Page {
                       "3": "x",
                       "4": "4",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3313,6 +3506,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3329,6 +3523,7 @@ Page {
                     "3": "x",
                     "4": "4",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3355,11 +3550,13 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3374,6 +3571,7 @@ Page {
                       "2": "b",
                       "3": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3402,6 +3600,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3416,6 +3615,7 @@ Page {
                     "2": "b",
                     "3": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3439,11 +3639,13 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3458,6 +3660,7 @@ Page {
                       "2": "b",
                       "3": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3486,6 +3689,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3500,6 +3704,7 @@ Page {
                     "2": "b",
                     "3": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3523,11 +3728,13 @@ Page {
             "__preactattr_": Object {
               "title": "hasdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3544,6 +3751,7 @@ Page {
                       "3": "x",
                       "4": "1",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3572,6 +3780,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3588,6 +3797,7 @@ Page {
                     "3": "x",
                     "4": "1",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3611,11 +3821,13 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3630,6 +3842,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3658,6 +3871,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3672,6 +3886,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3695,11 +3910,13 @@ Page {
             "__preactattr_": Object {
               "title": "mbvcm",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3716,6 +3933,7 @@ Page {
                       "3": "x",
                       "4": "2",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3744,6 +3962,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3760,6 +3979,7 @@ Page {
                     "3": "x",
                     "4": "2",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3783,11 +4003,13 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3802,6 +4024,7 @@ Page {
                       "2": "b",
                       "3": "3",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3830,6 +4053,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3844,6 +4068,7 @@ Page {
                     "2": "b",
                     "3": "3",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -3867,11 +4092,13 @@ Page {
             "__preactattr_": Object {
               "title": "123465",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               StackLayout {
                 "__n": "stackLayout",
                 "__preactattr_": Object {},
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [
                   Label {
@@ -3888,6 +4115,7 @@ Page {
                       "3": "x",
                       "4": "4",
                     },
+                    "_eventListener": Array [],
                     "attributes": Array [],
                     "childNodes": Array [],
                     "firstLoad": true,
@@ -3916,6 +4144,7 @@ Page {
             "view": StackLayout {
               "__n": "stackLayout",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
@@ -3932,6 +4161,7 @@ Page {
                     "3": "x",
                     "4": "4",
                   },
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,

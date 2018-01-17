@@ -4,9 +4,11 @@ exports[`Action Bar: Render of ActionBar 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "actionBar": ActionBar {
     "__n": "actionBar",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "actionItems": Object {
       "addItem": [Function],
       "removeItem": [Function],
@@ -17,6 +19,7 @@ Page {
         "__preactattr_": Object {
           "text": "myAction",
         },
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [],
         "firstLoad": true,
@@ -32,11 +35,13 @@ Page {
         "__preactattr_": Object {
           "text": "otherAction",
         },
+        "_eventListener": Array [],
         "actionView": Label {
           "__n": "label",
           "__preactattr_": Object {
             "text": "ot",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -54,6 +59,7 @@ Page {
             "__preactattr_": Object {
               "text": "ot",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -79,6 +85,7 @@ Page {
       StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -86,6 +93,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -109,13 +117,16 @@ Page {
         "__preactattr_": Object {
           "text": "MyNav",
         },
+        "_eventListener": Array [],
         "actionView": Label {
           "__n": "label",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
               "__preactattr_": true,
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -140,10 +151,12 @@ Page {
           Label {
             "__n": "label",
             "__preactattr_": Object {},
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               Label {
                 "__preactattr_": true,
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [],
                 "firstLoad": true,
@@ -177,6 +190,7 @@ Page {
         "__preactattr_": Object {
           "text": "myAction",
         },
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [],
         "firstLoad": true,
@@ -192,11 +206,13 @@ Page {
         "__preactattr_": Object {
           "text": "otherAction",
         },
+        "_eventListener": Array [],
         "actionView": Label {
           "__n": "label",
           "__preactattr_": Object {
             "text": "ot",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -214,6 +230,7 @@ Page {
             "__preactattr_": Object {
               "text": "ot",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -241,13 +258,16 @@ Page {
       "__preactattr_": Object {
         "text": "MyNav",
       },
+      "_eventListener": Array [],
       "actionView": Label {
         "__n": "label",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
             "__preactattr_": true,
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -272,10 +292,12 @@ Page {
         Label {
           "__n": "label",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
               "__preactattr_": true,
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -311,6 +333,7 @@ Page {
     "titleView": StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         Label {
@@ -318,6 +341,7 @@ Page {
           "__preactattr_": Object {
             "text": "myText",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -342,6 +366,7 @@ Page {
     ActionBar {
       "__n": "actionBar",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "actionItems": Object {
         "addItem": [Function],
         "removeItem": [Function],
@@ -352,6 +377,7 @@ Page {
           "__preactattr_": Object {
             "text": "myAction",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -367,11 +393,13 @@ Page {
           "__preactattr_": Object {
             "text": "otherAction",
           },
+          "_eventListener": Array [],
           "actionView": Label {
             "__n": "label",
             "__preactattr_": Object {
               "text": "ot",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -389,6 +417,7 @@ Page {
               "__preactattr_": Object {
                 "text": "ot",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -414,6 +443,7 @@ Page {
         StackLayout {
           "__n": "stackLayout",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
@@ -421,6 +451,7 @@ Page {
               "__preactattr_": Object {
                 "text": "myText",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -444,13 +475,16 @@ Page {
           "__preactattr_": Object {
             "text": "MyNav",
           },
+          "_eventListener": Array [],
           "actionView": Label {
             "__n": "label",
             "__preactattr_": Object {},
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               Label {
                 "__preactattr_": true,
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [],
                 "firstLoad": true,
@@ -475,10 +509,12 @@ Page {
             Label {
               "__n": "label",
               "__preactattr_": Object {},
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [
                 Label {
                   "__preactattr_": true,
+                  "_eventListener": Array [],
                   "attributes": Array [],
                   "childNodes": Array [],
                   "firstLoad": true,
@@ -512,6 +548,7 @@ Page {
           "__preactattr_": Object {
             "text": "myAction",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -527,11 +564,13 @@ Page {
           "__preactattr_": Object {
             "text": "otherAction",
           },
+          "_eventListener": Array [],
           "actionView": Label {
             "__n": "label",
             "__preactattr_": Object {
               "text": "ot",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -549,6 +588,7 @@ Page {
               "__preactattr_": Object {
                 "text": "ot",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -576,13 +616,16 @@ Page {
         "__preactattr_": Object {
           "text": "MyNav",
         },
+        "_eventListener": Array [],
         "actionView": Label {
           "__n": "label",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
               "__preactattr_": true,
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -607,10 +650,12 @@ Page {
           Label {
             "__n": "label",
             "__preactattr_": Object {},
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [
               Label {
                 "__preactattr_": true,
+                "_eventListener": Array [],
                 "attributes": Array [],
                 "childNodes": Array [],
                 "firstLoad": true,
@@ -646,6 +691,7 @@ Page {
       "titleView": StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -653,6 +699,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -675,11 +722,13 @@ Page {
     ScrollView {
       "__n": "scrollView",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         StackLayout {
           "__n": "stackLayout",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
@@ -687,6 +736,7 @@ Page {
               "__preactattr_": Object {
                 "text": "myText",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -709,6 +759,7 @@ Page {
       "content": StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -716,6 +767,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -745,11 +797,13 @@ Page {
   "content": ScrollView {
     "__n": "scrollView",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -757,6 +811,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -779,6 +834,7 @@ Page {
     "content": StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         Label {
@@ -786,6 +842,7 @@ Page {
           "__preactattr_": Object {
             "text": "myText",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,

@@ -23,16 +23,19 @@ Page {
     "state": Object {},
   },
   "_componentConstructor": [Function],
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [
     StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         SegmentedBar {
           "__n": "segmentedBar",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             SegmentedBarItem {
@@ -40,6 +43,7 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -55,6 +59,7 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -70,6 +75,7 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -85,6 +91,7 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -103,6 +110,7 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -118,6 +126,7 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -133,6 +142,7 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -148,6 +158,7 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -177,11 +188,13 @@ Page {
   "content": StackLayout {
     "__n": "stackLayout",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       SegmentedBar {
         "__n": "segmentedBar",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           SegmentedBarItem {
@@ -189,6 +202,7 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -204,6 +218,7 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -219,6 +234,7 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -234,6 +250,7 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -252,6 +269,7 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -267,6 +285,7 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -282,6 +301,7 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -297,6 +317,7 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -382,16 +403,19 @@ Page {
     },
   },
   "_componentConstructor": [Function],
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [
     StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         SegmentedBar {
           "__n": "segmentedBar",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             SegmentedBarItem {
@@ -399,6 +423,7 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -414,6 +439,7 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -429,6 +455,7 @@ Page {
               "__preactattr_": Object {
                 "title": "hasdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -444,6 +471,7 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -459,6 +487,7 @@ Page {
               "__preactattr_": Object {
                 "title": "mbvcm",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -474,6 +503,7 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -489,6 +519,7 @@ Page {
               "__preactattr_": Object {
                 "title": "123465",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -507,6 +538,7 @@ Page {
               "__preactattr_": Object {
                 "title": "bla",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -522,6 +554,7 @@ Page {
               "__preactattr_": Object {
                 "title": "asdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -537,6 +570,7 @@ Page {
               "__preactattr_": Object {
                 "title": "hasdf",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -552,6 +586,7 @@ Page {
               "__preactattr_": Object {
                 "title": "uztriurtzui",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -567,6 +602,7 @@ Page {
               "__preactattr_": Object {
                 "title": "mbvcm",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -582,6 +618,7 @@ Page {
               "__preactattr_": Object {
                 "title": "97634",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -597,6 +634,7 @@ Page {
               "__preactattr_": Object {
                 "title": "123465",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -626,11 +664,13 @@ Page {
   "content": StackLayout {
     "__n": "stackLayout",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       SegmentedBar {
         "__n": "segmentedBar",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           SegmentedBarItem {
@@ -638,6 +678,7 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -653,6 +694,7 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -668,6 +710,7 @@ Page {
             "__preactattr_": Object {
               "title": "hasdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -683,6 +726,7 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -698,6 +742,7 @@ Page {
             "__preactattr_": Object {
               "title": "mbvcm",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -713,6 +758,7 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -728,6 +774,7 @@ Page {
             "__preactattr_": Object {
               "title": "123465",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -746,6 +793,7 @@ Page {
             "__preactattr_": Object {
               "title": "bla",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -761,6 +809,7 @@ Page {
             "__preactattr_": Object {
               "title": "asdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -776,6 +825,7 @@ Page {
             "__preactattr_": Object {
               "title": "hasdf",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -791,6 +841,7 @@ Page {
             "__preactattr_": Object {
               "title": "uztriurtzui",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -806,6 +857,7 @@ Page {
             "__preactattr_": Object {
               "title": "mbvcm",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -821,6 +873,7 @@ Page {
             "__preactattr_": Object {
               "title": "97634",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -836,6 +889,7 @@ Page {
             "__preactattr_": Object {
               "title": "123465",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,

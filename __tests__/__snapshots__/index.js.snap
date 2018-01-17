@@ -4,6 +4,7 @@ exports[`Basic Render: after remove 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "content": null,
@@ -12,7 +13,46 @@ Page {
   "mergeInto": undefined,
   "nodeName": "PAGE",
   "nodeType": 1,
-  "parentNode": null,
+  "parentNode": Object {
+    "appendChild": [Function],
+    "attributes": Array [],
+    "childNodes": Array [],
+    "mergeInto": undefined,
+    "nodeName": "artificalParent",
+    "nodeType": "artificalParent",
+    "remove": [Function],
+    "removeChild": [Function],
+    "renderedComponent": VNode {
+      "attributes": undefined,
+      "children": Array [
+        VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [
+                VNode {
+                  "attributes": Object {
+                    "text": "myText",
+                  },
+                  "children": Array [],
+                  "key": undefined,
+                  "nodeName": "label",
+                },
+              ],
+              "key": undefined,
+              "nodeName": "stackLayout",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "scrollView",
+        },
+      ],
+      "key": undefined,
+      "nodeName": "page",
+    },
+    "renderedInto": null,
+  },
   "renderedComponent": VNode {
     "attributes": undefined,
     "children": Array [
@@ -51,16 +91,19 @@ exports[`Basic Render: basic renderA 1`] = `
 Page {
   "__n": "page",
   "__preactattr_": Object {},
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [
     ScrollView {
       "__n": "scrollView",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         StackLayout {
           "__n": "stackLayout",
           "__preactattr_": Object {},
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [
             Label {
@@ -68,6 +111,7 @@ Page {
               "__preactattr_": Object {
                 "text": "myText",
               },
+              "_eventListener": Array [],
               "attributes": Array [],
               "childNodes": Array [],
               "firstLoad": true,
@@ -90,6 +134,7 @@ Page {
       "content": StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -97,6 +142,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -126,11 +172,13 @@ Page {
   "content": ScrollView {
     "__n": "scrollView",
     "__preactattr_": Object {},
+    "_eventListener": Array [],
     "attributes": Array [],
     "childNodes": Array [
       StackLayout {
         "__n": "stackLayout",
         "__preactattr_": Object {},
+        "_eventListener": Array [],
         "attributes": Array [],
         "childNodes": Array [
           Label {
@@ -138,6 +186,7 @@ Page {
             "__preactattr_": Object {
               "text": "myText",
             },
+            "_eventListener": Array [],
             "attributes": Array [],
             "childNodes": Array [],
             "firstLoad": true,
@@ -160,6 +209,7 @@ Page {
     "content": StackLayout {
       "__n": "stackLayout",
       "__preactattr_": Object {},
+      "_eventListener": Array [],
       "attributes": Array [],
       "childNodes": Array [
         Label {
@@ -167,6 +217,7 @@ Page {
           "__preactattr_": Object {
             "text": "myText",
           },
+          "_eventListener": Array [],
           "attributes": Array [],
           "childNodes": Array [],
           "firstLoad": true,
@@ -275,6 +326,7 @@ Page {
 
 exports[`nodeValueGetSet: expectation for undefined creation 1`] = `
 StackLayout {
+  "_eventListener": Array [],
   "attributes": Array [],
   "childNodes": Array [],
   "firstLoad": true,
