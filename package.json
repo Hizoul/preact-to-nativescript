@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-jest": "^22.0.6",
+    "babel-jest": "^22.1.0",
     "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.15.0",
@@ -17,8 +17,8 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^22.0.6",
-    "microbundle": "^0.3.0",
+    "jest": "^22.1.1",
+    "microbundle": "^0.3.1",
     "preact-nativescript-mock": "0.0.6"
   },
   "scripts": {

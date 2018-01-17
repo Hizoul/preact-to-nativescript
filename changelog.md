@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+- update dependencies
+
 ## 0.0.6-1 & 0.0.6-2
 - Fix publishing `preact-nativescript-mock` as local dependency and as non dev dependency
 
