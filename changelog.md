@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.7-1
+- remove default export because it caused only the default to be exported
+
 ## 0.0.7
 - update dependencies
 - fix tabview broken by 0.0.6
