@@ -61,8 +61,8 @@ let extensions = {
     if ("text" in this && child.splitText !== null) {
       this.text = child.nodeValue
     } else {
-      this.callAddChild(child)
       this.childNodes.push(child)
+      this.callAddChild(child)
       child.parentNode = this
     }
   },

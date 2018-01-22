@@ -1,7 +1,8 @@
 # Changelog
 
-## Upcoming
+## 0.0.7
 - update dependencies
+- fix tabview broken by 0.0.6
 
 ## 0.0.6-1 & 0.0.6-2
 - Fix publishing `preact-nativescript-mock` as local dependency and as non dev dependency
