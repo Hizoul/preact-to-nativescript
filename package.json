@@ -22,7 +22,7 @@
     "preact-nativescript-mock": "0.0.6"
   },
   "scripts": {
-    "`prepare`": "npm run build",
+    "prepublish": "npm run build",
     "buildBook": "cd docs && gitbook build",
     "build": "./node_modules/.bin/microbundle index.js",
     "dev": "./node_modules/.bin/microbundle watch index.js",
