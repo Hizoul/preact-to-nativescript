@@ -31,11 +31,10 @@ application.start({
 # TBD
 - [dont ship own preact version](https://github.com/developit/preact/pull/978)
 - Handle unmounting properly when navigating via Nativescripts API (custom routing in pure js works fine though!)
-- demo app custom router removechild seems to be off by one
 - ActionBar Known Limitations
   - SystemIcon is not respected
   - NavigationButton doesn't properly render
-- probably a lot more that isn't in scope yet
+- probably more that isn't in scope yet
 
 # Credits
 - [developit](https://github.com/developit) by providing [this untested document implementation](https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569) that turned into the core of this library. He also authored [undom](https://github.com/developit/undom) from which some document mock code was borrowed. And he also authored [preact](https://github.com/developit/preact) without which this wouldn't even be possible.
