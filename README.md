@@ -34,7 +34,6 @@ application.start({
 - ActionBar Known Limitations
   - SystemIcon is not respected
   - NavigationButton doesn't properly render
-- Document and enable usage / registration of plugin components
 - probably more that isn't in scope yet
 
 # Credits
