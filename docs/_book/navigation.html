@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Credits · GitBook</title>
+        <title>Navigation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="navigation.html" />
     
-    <link rel="prev" href="plugins.html" />
+    
+    <link rel="prev" href="components.html" />
     
 
     </head>
@@ -158,7 +160,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="navigation.html">
+        <li class="chapter active" data-level="1.4" data-path="navigation.html">
             
                 <a href="navigation.html">
             
@@ -216,7 +218,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="credits.html">
+        <li class="chapter " data-level="1.6" data-path="credits.html">
             
                 <a href="credits.html">
             
@@ -259,7 +261,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Credits</a>
+        <a href="." >Navigation</a>
     </h1>
 </div>
 
@@ -274,11 +276,114 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="credits">Credits</h1>
-<ul>
-<li><a href="https://github.com/developit" target="_blank">developit</a> by basically programming this library and making it possible without even knowing. He provided <a href="https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569" target="_blank">this untested document implementation</a> which is the most important core part of this library. He also authored <a href="https://github.com/developit/undom" target="_blank">undom</a> from which some document mock code was borrowed. And he also authored <a href="https://github.com/developit/preact" target="_blank">preact</a> without which this wouldn&apos;t even be possible.</li>
-<li><a href="https://github.com/staydecent" target="_blank">staydecent</a> for providing <a href="https://github.com/staydecent/nativescript-preact" target="_blank">a code example</a> that showed that preact-to-nativescript is not impossible wizardry but achievable by writing the right wrapper</li>
-</ul>
+                                <h1 id="javascript-navigation">JavaScript Navigation</h1>
+<p>Using JavaScript navigation by changing the rendered component via state changes works without a hitch.
+This is an example custom router implementation findable in the demo application.</p>
+<pre><code class="lang-typescript">import { Component } from &quot;preact&quot;
+import {
+  Button, HtmlView, Label, Page, ScrollView, StackLayout, TextView, WebView
+} from &quot;preact-nativescript-components&quot;
+import { goBack, h } from &quot;preact-to-nativescript&quot;
+
+class Route1 extends Component&lt;any, any&gt; {
+  public render() {
+    return (
+      &lt;StackLayout&gt;
+        &lt;Label text=&quot;First Page&quot; /&gt;
+        &lt;Button onTap={this.props.navigateTo.bind(this, &quot;/&quot;)} /&gt;
+        &lt;Button onTap={this.props.goBack} /&gt;
+      &lt;/StackLayout&gt;
+    )
+  }
+}
+
+class Route2 extends Component&lt;any, any&gt; {
+  public render() {
+    return (
+      &lt;StackLayout&gt;
+        &lt;Label text=&quot;Second Page&quot; /&gt;
+        &lt;Button onTap={this.props.navigateTo.bind(this, &quot;/&quot;)} /&gt;
+        &lt;Button onTap={this.props.goBack} /&gt;
+      &lt;/StackLayout&gt;
+    )
+  }
+}
+
+const routes = [
+  {default: true, path: &quot;/&quot;, component: Route1},
+  {path: &quot;/test&quot;, component: Route2}
+]
+
+class PageCustomRouter extends Component&lt;any, any&gt; {
+  private setNav: Function
+  private goBack: Function
+  constructor(props) {
+    super(props)
+    this.state = {
+      route: &quot;/&quot;,
+      navStack: []
+    }
+    this.setNav = (newRoute) =&gt; {
+      const newStack = this.state.navStack.splice()
+      newStack.push(newRoute)
+      this.setState({route: newRoute, navStack: newStack})
+    }
+    this.goBack = () =&gt; {
+      const newStack = this.state.navStack.splice()
+      newStack.pop()
+      this.setState({route: newStack[newStack.length - 1], navStack: newStack})
+    }
+  }
+  public render() {
+    let Comp: any = StackLayout
+    for (const route of routes) {
+      if (this.state.route === route.path) {
+        Comp = route.component
+      }
+    }
+    return (
+      &lt;Page&gt;
+        &lt;Comp navigateTo={this.setNav} goBack={this.goBack} /&gt;
+      &lt;/Page&gt;
+    )
+  }
+}
+
+export default PageCustomRouter
+</code></pre>
+<h2 id="native-navigation">Native Navigation</h2>
+<p>NativeScript does offer an API to navigate that supports animations etc. out of the box.
+preact-to-nativescript does not yet correctly unmount pages when you use goBack! Contributions to fix that are welcome!
+This API is usable as portrayed below.</p>
+<pre><code class="lang-typescript">import { FunctionalComponent } from &quot;preact&quot;
+import { ActionBar, Button, Label, Page, ScrollView, StackLayout } from &quot;preact-nativescript-components&quot;
+import { h, navigateTo } from &quot;preact-to-nativescript&quot;
+import PageActionBar from &quot;./actionBar&quot;
+import PageActivityIndicator from &quot;./activityIndicator&quot;
+import PageHtmlView from &quot;./htmlView&quot;
+
+const StartPage: FunctionalComponent&lt;any&gt; = () =&gt; {
+  return (
+    &lt;Page&gt;
+        &lt;ActionBar text=&quot;Preact to Nativescript Menu&quot; /&gt;
+        &lt;ScrollView&gt;
+          &lt;StackLayout&gt;
+            &lt;Button text=&quot;ActivityIndicator&quot; onTap={navigateTo.bind(null, &lt;PageActivityIndicator /&gt;)} /&gt;
+            &lt;Button text=&quot;ActionBar&quot; onTap={navigateTo.bind(null, &lt;PageActionBar /&gt;)} /&gt;
+            &lt;Button text=&quot;ActionBar&quot; onTap={navigateTo.bind(null, &lt;PageHtmlView /&gt;)} /&gt;
+          &lt;/StackLayout&gt;
+        &lt;/ScrollView&gt;
+    &lt;/Page&gt;
+  )
+}
+
+export default StartPage
+</code></pre>
+<p>You could also directly call NativeScripts APIs which is what the <code>navigateTo</code> and <code>goBack</code> functions do</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> topmost = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;tns-core-modules/ui/frame&quot;</span>).topmost()
+topmost.navigate(() =&gt; <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;preact-to-nativescript&quot;</span>).render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">YourComopnent</span> /&gt;</span>))
+topmost.goBack()
+</span></code></pre>
 
                                 
                                 </section>
@@ -306,10 +411,14 @@
 
             
                 
-                <a href="plugins.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: NativeScript Plugins">
+                <a href="components.html#jsx" class="navigation navigation-prev " aria-label="Previous page: JSX">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="navigation.html#javascript_navigation" class="navigation navigation-next " aria-label="Next page: JavaScript Navigation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -318,7 +427,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Credits","level":"1.6","depth":1,"previous":{"title":"NativeScript Plugins","level":"1.5","depth":1,"path":"plugins.md","ref":"plugins.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"credits.md","mtime":"2018-01-13T11:23:39.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T16:31:03.809Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Navigation","level":"1.4","depth":1,"next":{"title":"JavaScript Navigation","level":"1.4.1","depth":2,"anchor":"#javascript_navigation","path":"navigation.md","ref":"navigation.md#javascript_navigation","articles":[]},"previous":{"title":"JSX","level":"1.3.2","depth":2,"anchor":"#jsx","path":"components.md","ref":"components.md#jsx","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"navigation.md","mtime":"2018-01-14T12:53:01.780Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T16:31:03.809Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

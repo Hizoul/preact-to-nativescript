@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentedBar: after registered gradient 1`] = `
+Page {
+  "__n": "page",
+  "__preactattr_": Object {},
+  "_eventListener": Array [],
+  "attributes": Array [],
+  "childNodes": Array [
+    StackLayout {
+      "__n": "stackLayout",
+      "__preactattr_": Object {},
+      "_eventListener": Array [],
+      "attributes": Array [],
+      "childNodes": Array [
+        MyComp {
+          "__n": "gradient",
+          "__preactattr_": Object {},
+          "_eventListener": Array [],
+          "attributes": Array [],
+          "childNodes": Array [],
+          "firstLoad": true,
+          "loaded": false,
+          "nodeName": "GRADIENT",
+          "nodeType": 1,
+          "parentNode": [Circular],
+          "set": [Function],
+        },
+      ],
+      "firstLoad": true,
+      "loaded": false,
+      "nodeName": "STACKLAYOUT",
+      "nodeType": 1,
+      "parentNode": [Circular],
+      "set": [Function],
+    },
+  ],
+  "content": StackLayout {
+    "__n": "stackLayout",
+    "__preactattr_": Object {},
+    "_eventListener": Array [],
+    "attributes": Array [],
+    "childNodes": Array [
+      MyComp {
+        "__n": "gradient",
+        "__preactattr_": Object {},
+        "_eventListener": Array [],
+        "attributes": Array [],
+        "childNodes": Array [],
+        "firstLoad": true,
+        "loaded": false,
+        "nodeName": "GRADIENT",
+        "nodeType": 1,
+        "parentNode": [Circular],
+        "set": [Function],
+      },
+    ],
+    "firstLoad": true,
+    "loaded": false,
+    "nodeName": "STACKLAYOUT",
+    "nodeType": 1,
+    "parentNode": [Circular],
+    "set": [Function],
+  },
+  "firstLoad": true,
+  "loaded": false,
+  "mergeInto": undefined,
+  "nodeName": "PAGE",
+  "nodeType": 1,
+  "parentNode": Object {
+    "_removeView": [Function],
+    "appendChild": [Function],
+    "attributes": Array [],
+    "childNodes": Array [
+      [Circular],
+    ],
+    "mergeInto": undefined,
+    "nodeName": "artificalParent",
+    "nodeType": "artificalParent",
+    "remove": [Function],
+    "removeChild": [Function],
+    "renderedComponent": VNode {
+      "attributes": undefined,
+      "children": Array [
+        VNode {
+          "attributes": undefined,
+          "children": Array [
+            VNode {
+              "attributes": undefined,
+              "children": Array [],
+              "key": undefined,
+              "nodeName": "gradient",
+            },
+          ],
+          "key": undefined,
+          "nodeName": "stackLayout",
+        },
+      ],
+      "key": undefined,
+      "nodeName": "page",
+    },
+    "renderedInto": null,
+  },
+  "renderedComponent": VNode {
+    "attributes": undefined,
+    "children": Array [
+      VNode {
+        "attributes": undefined,
+        "children": Array [
+          VNode {
+            "attributes": undefined,
+            "children": Array [],
+            "key": undefined,
+            "nodeName": "gradient",
+          },
+        ],
+        "key": undefined,
+        "nodeName": "stackLayout",
+      },
+    ],
+    "key": undefined,
+    "nodeName": "page",
+  },
+  "renderedInto": [Circular],
+  "set": [Function],
+}
+`;
+
+exports[`SegmentedBar: err 1`] = `
+[Error: [31m[1mConfiguration error[22m:[39m
+[31m[39m
+[31mCould not locate module [1mtns-core-modules/ui/gradient[22m (mapped as [1mpreact-nativescript-mock/ui/gradient[22m)[39m
+[31m[39m
+[31mPlease check:[39m
+[31m[39m
+[31m"moduleNameMapper": {[39m
+[31m  "/tns-core-modules(.*)/": "[1mpreact-nativescript-mock$1[22m"[39m
+[31m},[39m
+[31m"resolver": [1mundefined[22m[39m]
+`;

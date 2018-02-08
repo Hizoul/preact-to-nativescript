@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Credits · GitBook</title>
+        <title>NativeScript Plugins · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="credits.html" />
     
-    <link rel="prev" href="plugins.html" />
+    
+    <link rel="prev" href="navigation.html" />
     
 
     </head>
@@ -203,7 +205,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="plugins.html">
+        <li class="chapter active" data-level="1.5" data-path="plugins.html">
             
                 <a href="plugins.html">
             
@@ -216,7 +218,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="credits.html">
+        <li class="chapter " data-level="1.6" data-path="credits.html">
             
                 <a href="credits.html">
             
@@ -259,7 +261,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Credits</a>
+        <a href="." >NativeScript Plugins</a>
     </h1>
 </div>
 
@@ -274,11 +276,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="credits">Credits</h1>
-<ul>
-<li><a href="https://github.com/developit" target="_blank">developit</a> by basically programming this library and making it possible without even knowing. He provided <a href="https://github.com/staydecent/nativescript-preact/issues/4#issuecomment-323900569" target="_blank">this untested document implementation</a> which is the most important core part of this library. He also authored <a href="https://github.com/developit/undom" target="_blank">undom</a> from which some document mock code was borrowed. And he also authored <a href="https://github.com/developit/preact" target="_blank">preact</a> without which this wouldn&apos;t even be possible.</li>
-<li><a href="https://github.com/staydecent" target="_blank">staydecent</a> for providing <a href="https://github.com/staydecent/nativescript-preact" target="_blank">a code example</a> that showed that preact-to-nativescript is not impossible wizardry but achievable by writing the right wrapper</li>
-</ul>
+                                <h1 id="using-nativescript-plugins">Using NativeScript Plugins</h1>
+<p>If you wish to use a plugin like e.g. <code>nativescript-gradient</code> you can use the <code>registerComponent</code> Function like this</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { registerComponent } from <span class="hljs-string">&quot;preact-to-nativescript&quot;</span>
+registerComponent(<span class="hljs-string">&quot;gradient&quot;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;nativescript-gradient&quot;</span>).Gradient)
+</code></pre>
+<p>Afterwards you can just render it via the React.createComponent / h function</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { render } from <span class="hljs-string">&quot;preact-to-nativescript&quot;</span>
+render(h(<span class="hljs-string">&quot;page&quot;</span>, <span class="hljs-literal">null</span>, [
+  h(<span class="hljs-string">&quot;stackLayout&quot;</span>, <span class="hljs-literal">null</span>, [
+    h(<span class="hljs-string">&quot;gradient&quot;</span>)
+  ])
+]))
+</code></pre>
+<p>Or alternatively wrap it around a component like <code>preact-nativescript-components</code> does for a JSX-Syntax</p>
+<pre><code class="lang-typescript">import { Component, h } from &quot;preact&quot;
+import { Page, StackLayout, Label } from &quot;preact-nativescript-components&quot;
+const GradientComp = (props: any) =&gt; {
+  return h(&quot;gradient&quot;, props)
+}
+render(
+  &lt;Page&gt;
+    &lt;StackLayout&gt;
+      &lt;GradientComp direction=&quot;to right&quot; colors=&quot;red, blue&quot;&gt;
+        &lt;Label text=&quot;inside gradient&quot; /&gt;
+        &lt;Label text=&quot;inside gradient&quot; /&gt;
+        &lt;Label text=&quot;inside gradient&quot; /&gt;
+      &lt;/GradientComp&gt;
+    &lt;/StackLayout&gt;
+  &lt;/Page&gt;
+)
+</code></pre>
 
                                 
                                 </section>
@@ -306,10 +334,14 @@
 
             
                 
-                <a href="plugins.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: NativeScript Plugins">
+                <a href="navigation.html#native_navigation" class="navigation navigation-prev " aria-label="Previous page: Native Navigation">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="credits.html" class="navigation navigation-next " aria-label="Next page: Credits">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -318,7 +350,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Credits","level":"1.6","depth":1,"previous":{"title":"NativeScript Plugins","level":"1.5","depth":1,"path":"plugins.md","ref":"plugins.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"credits.md","mtime":"2018-01-13T11:23:39.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T16:31:03.809Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NativeScript Plugins","level":"1.5","depth":1,"next":{"title":"Credits","level":"1.6","depth":1,"path":"credits.md","ref":"credits.md","articles":[]},"previous":{"title":"Native Navigation","level":"1.4.2","depth":2,"anchor":"#native_navigation","path":"navigation.md","ref":"navigation.md#native_navigation","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"plugins.md","mtime":"2018-02-08T16:30:19.030Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-08T16:31:03.809Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

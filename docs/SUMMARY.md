@@ -8,4 +8,5 @@
 * [Navigation](navigation.md)
   * [JavaScript Navigation](navigation.md#javascript_navigation)
   * [Native Navigation](navigation.md#native_navigation)
+* [NativeScript Plugins](plugins.md)
 * [Credits](credits.md)

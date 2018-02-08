@@ -6,8 +6,9 @@ declare module "preact-to-nativescript" {
   const navigateTo: (component: VNode) => void
   const goBack: () => void
   const preload: () => void
+  const registerComponent: (name: string, comopnent: any) => void
   const Preact: any
   export {
-    render, Preact, navigateTo, goBack, h, Component, preload
+    render, Preact, navigateTo, goBack, h, Component, preload, registerComponent
   }
 }

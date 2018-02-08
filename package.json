@@ -1,6 +1,6 @@
 {
   "name": "preact-to-nativescript",
-  "version": "0.0.8-1",
+  "version": "0.0.9",
   "description": "Render (p)React components to NativeScript",
   "main": "dist/preact-to-nativescript.js",
   "repository": "https://github.com/hizoul/preact-to-nativescript",

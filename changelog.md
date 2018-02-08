@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.9
+- ability to use plugin components through `registerComponent`
+- document usage of plugin components
+
 ## 0.0.8 & 0.0.8-1
 - add `preload` function to enable webpack to register the external imports properly
 

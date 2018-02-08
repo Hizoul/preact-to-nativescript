@@ -49,6 +49,10 @@ const preload = () => {
   preloaded.webview = require("tns-core-modules/ui/web-view").WebView
 }
 
+const registerComponent = (name, component) => {
+  preloaded[name] = component
+}
+
 let extensions = {
   setAttribute(name, value) {
     this.set(name, value)
@@ -346,5 +350,5 @@ const options = Preact.options
 
 export {
   Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack,
-  h, Component, cloneElement, options, preload
+  h, Component, cloneElement, options, preload, registerComponent
 }
