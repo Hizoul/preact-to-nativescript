@@ -29,7 +29,7 @@ const preload = () => {
   preloaded.datepicker = require("tns-core-modules/ui/date-picker").DatePicker
   preloaded.htmlview = require("tns-core-modules/ui/html-view").HtmlView
   preloaded.image = require("tns-core-modules/ui/image").Image
-  preloaded.label = require("tns-core-modules/ui/image").Label
+  preloaded.label = require("tns-core-modules/ui/label").Label
   preloaded.listpicker = require("tns-core-modules/ui/list-picker").ListPicker
   preloaded.listview = require("tns-core-modules/ui/list-view").ListView
   preloaded.page = require("tns-core-modules/ui/page").Page
@@ -228,7 +228,7 @@ const document = {
           elementRequirePath += "layouts/"
         }
         elementRequirePath += convertType(originalType)
-        let m = preloaded.stacklayout
+        let m = require(elementRequirePath)
         // find matching named export:
         for (let i in m) {
           if (i.toLowerCase() === type) {

@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.8
+## 0.0.8 & 0.0.8-1
 - add `preload` function to enable webpack to register the external imports properly
 
 ## 0.0.7-1
