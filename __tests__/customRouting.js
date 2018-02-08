@@ -1,5 +1,6 @@
-import { render, h, Component, goBack } from "../index"
+import { render, h, Component, goBack, preload } from "../index"
 
+preload()
 class Route1 extends Component {
   render() {
     return h("stackLayout", null, [
