@@ -5,8 +5,9 @@ declare module "preact-to-nativescript" {
     parent: Element | Document | NavigationEntry | null, mergeWith?:Element) => Page
   const navigateTo: (component: VNode) => void
   const goBack: () => void
+  const preload: () => void
   const Preact: any
   export {
-    render, Preact, navigateTo, goBack, h, Component
+    render, Preact, navigateTo, goBack, h, Component, preload
   }
 }

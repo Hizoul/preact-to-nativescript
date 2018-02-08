@@ -10,6 +10,45 @@ function noOp() {
   return null
 }
 
+const preloaded = {
+}
+
+const preload = () => {
+  preloaded.scrollview = require("tns-core-modules/ui/scroll-view").ScrollView
+  preloaded.absolutelayout = require("tns-core-modules/ui/layouts/absolute-layout").AbsoluteLayout
+  preloaded.docklayout = require("tns-core-modules/ui/layouts/dock-layout").DockLayout
+  preloaded.flexboxlayout = require("tns-core-modules/ui/layouts/flexbox-layout").FlexboxLayout
+  preloaded.gridlayout = require("tns-core-modules/ui/layouts/grid-layout").GridLayout
+  preloaded.stacklayout = require("tns-core-modules/ui/layouts/stack-layout").StackLayout
+  preloaded.wraplayout = require("tns-core-modules/ui/layouts/wrap-layout").WrapLayout
+  preloaded.actionbar = require("tns-core-modules/ui/action-bar").ActionBar
+  preloaded.actionitem = require("tns-core-modules/ui/action-bar").ActionItem
+  preloaded.navigationbutton = require("tns-core-modules/ui/action-bar").NavigationButton
+  preloaded.activityindicator = require("tns-core-modules/ui/activity-indicator").ActivityIndicator
+  preloaded.button = require("tns-core-modules/ui/button").Button
+  preloaded.datepicker = require("tns-core-modules/ui/date-picker").DatePicker
+  preloaded.htmlview = require("tns-core-modules/ui/html-view").HtmlView
+  preloaded.image = require("tns-core-modules/ui/image").Image
+  preloaded.label = require("tns-core-modules/ui/image").Label
+  preloaded.listpicker = require("tns-core-modules/ui/list-picker").ListPicker
+  preloaded.listview = require("tns-core-modules/ui/list-view").ListView
+  preloaded.page = require("tns-core-modules/ui/page").Page
+  preloaded.placeholder = require("tns-core-modules/ui/placeholder").Placeholder
+  preloaded.progress = require("tns-core-modules/ui/progress").Progress
+  preloaded.scrollview = require("tns-core-modules/ui/scroll-view").ScrollView
+  preloaded.searchbar = require("tns-core-modules/ui/search-bar").SearchBar
+  preloaded.segmentedbar = require("tns-core-modules/ui/segmented-bar").SegmentedBar
+  preloaded.segmentedbaritem = require("tns-core-modules/ui/segmented-bar").SegmentedBarItem
+  preloaded.slider = require("tns-core-modules/ui/slider").Slider
+  preloaded.switch = require("tns-core-modules/ui/switch").Switch
+  preloaded.tabview = require("tns-core-modules/ui/tab-view").TabView
+  preloaded.tabviewitem = require("tns-core-modules/ui/tab-view").TabViewItem
+  preloaded.textfield = require("tns-core-modules/ui/text-field").TextField
+  preloaded.textview = require("tns-core-modules/ui/text-view").TextView
+  preloaded.timepicker = require("tns-core-modules/ui/time-picker").TimePicker
+  preloaded.webview = require("tns-core-modules/ui/web-view").WebView
+}
+
 let extensions = {
   setAttribute(name, value) {
     this.set(name, value)
@@ -178,17 +217,24 @@ const document = {
     if (type in types) {
       NativeElement = types[type]
     } else {
-      let elementRequirePath = "tns-core-modules/ui/"
-      if (type.indexOf("layout") !== -1) {
-        elementRequirePath += "layouts/"
-      }
-      elementRequirePath += convertType(originalType)
-      let m = require(elementRequirePath)
-      // find matching named export:
-      for (let i in m) {
-        if (i.toLowerCase() === type) {
-          NativeElement = m[i]
-          break
+      if (preloaded[type]) {
+        NativeElement = preloaded[type]
+        NativeElement.prototype.origRemoveChild = NativeElement.prototype.removeChild
+        Object.assign(NativeElement.prototype, extensions)
+        types[type] = NativeElement
+      } else {
+        let elementRequirePath = "tns-core-modules/ui/"
+        if (type.indexOf("layout") !== -1) {
+          elementRequirePath += "layouts/"
+        }
+        elementRequirePath += convertType(originalType)
+        let m = preloaded.stacklayout
+        // find matching named export:
+        for (let i in m) {
+          if (i.toLowerCase() === type) {
+            NativeElement = m[i]
+            break
+          }
         }
       }
       NativeElement.prototype.origRemoveChild = NativeElement.prototype.removeChild
@@ -282,18 +328,23 @@ const render = (Component, parent, merge) => {
   return parent.childNodes[0]
 }
 
+const frame = require("tns-core-modules/ui/frame")
+
 const navigateTo = (comp) => {
-  const topmost = require("tns-core-modules/ui/frame").topmost()
+  const topmost = frame.topmost()
   topmost.navigate(() => render(comp))
 }
 const goBack = () => {
-  const topmost = require("tns-core-modules/ui/frame").topmost()
+  const topmost = frame.topmost()
   topmost.goBack()
 }
 
 const h = Preact.h
 const Component = Preact.Component
+const cloneElement = Preact.cloneElement
+const options = Preact.options
 
 export {
-  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack, h, Component
+  Preact, render, nodeValueGetSet, findWhere, noOp, navigateTo, goBack,
+  h, Component, cloneElement, options, preload
 }

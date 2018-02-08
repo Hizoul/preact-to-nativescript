@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.8
+- add `preload` function to enable webpack to register the external imports properly
+
 ## 0.0.7-1
 - remove default export because it caused only the default to be exported
 
